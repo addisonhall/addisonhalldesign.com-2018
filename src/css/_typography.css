@@ -1,0 +1,42 @@
+body {
+    color: var(--color-secondary);
+    font-family: 'SamoSans', sans-serif;
+    font-feature-settings: "liga" 1;
+    font-size: var(--body-font-size);
+    letter-spacing: -0.0125em;
+}
+@media (--breakpoint-lg) {
+    body {
+        font-size: var(--lg-body-font-size);
+    }
+}
+
+/* Letter-spacing */
+.ls-1 { letter-spacing: 0.025em; }
+.ls-2 { letter-spacing: 0.05em; }
+.ls-3 { letter-spacing: 0.075em; }
+.ls-4 { letter-spacing: 0.1em; }
+
+/* Negative letter-spacing */
+.ls-n1 { letter-spacing: -0.025em; }
+.ls-n2 { letter-spacing: -0.05em; }
+.ls-n3 { letter-spacing: -0.075em; }
+.ls-n4 { letter-spacing: -0.1em; }
+
+/* Intro text */
+.intro-hdr {
+    font-size: 2rem;
+    letter-spacing: -0.015em;
+}
+@media (--breakpoint-sm) {
+    .intro-hdr {
+        font-size: 3rem;
+        letter-spacing: -0.025em;
+    }
+}
+@media (--breakpoint-md) {
+    .intro-hdr {
+        font-size: 6.2vw;
+        letter-spacing: -0.0325em;
+    }
+}

@@ -1,0 +1,12 @@
+@media (--breakpoint-md) {
+    .figure-full-screen {
+        position: relative;
+    }
+    .figure-full-screen figcaption {
+        position: absolute;
+        top: var(--space-4);
+        right: var(--space-4);
+        transform: rotate(-90deg);
+        transform-origin: bottom right;
+    }
+}

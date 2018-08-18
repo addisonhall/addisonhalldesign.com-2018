@@ -1,0 +1,37 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3610133, 2018-07-15T14:46:02-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed ../fonts/samo-sans(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: SamoSans-Italic by CarnokyType
+ * URL: https://www.myfonts.com/fonts/carnoky/samo-sans/italic/
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: SamoSans-BoldItalic by CarnokyType
+ * URL: https://www.myfonts.com/fonts/carnoky/samo-sans/bold-italic/
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: SamoSans-Bold by CarnokyType
+ * URL: https://www.myfonts.com/fonts/carnoky/samo-sans/bold/
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: SamoSans-Regular by CarnokyType
+ * URL: https://www.myfonts.com/fonts/carnoky/samo-sans/regular/
+ * Licensed pageviews: 100,010,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3610133
+ * ../fonts/samo-sans copyright: Copyright (c) 2012 by Samuel Carnoky / CarnokyType. All rights reserved.
+ * 
+ * © 2018 MyFonts Inc
+*/
+
+@font-face {font-family: 'SamoSans';font-weight: normal;font-style: italic;src: url('../fonts/samo-sans/371615_0_0.eot');src: url('../fonts/samo-sans/371615_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/samo-sans/371615_0_0.woff2') format('woff2'),url('../fonts/samo-sans/371615_0_0.woff') format('woff'),url('../fonts/samo-sans/371615_0_0.ttf') format('truetype');}
+@font-face {font-family: 'SamoSans';font-weight: bold;font-style: italic;src: url('../fonts/samo-sans/371615_1_0.eot');src: url('../fonts/samo-sans/371615_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/samo-sans/371615_1_0.woff2') format('woff2'),url('../fonts/samo-sans/371615_1_0.woff') format('woff'),url('../fonts/samo-sans/371615_1_0.ttf') format('truetype');}
+@font-face {font-family: 'SamoSans';font-weight: bold;font-style: normal;src: url('../fonts/samo-sans/371615_2_0.eot');src: url('../fonts/samo-sans/371615_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/samo-sans/371615_2_0.woff2') format('woff2'),url('../fonts/samo-sans/371615_2_0.woff') format('woff'),url('../fonts/samo-sans/371615_2_0.ttf') format('truetype');}
+@font-face {font-family: 'SamoSans';font-weight: normal;font-style: normal;src: url('../fonts/samo-sans/371615_3_0.eot');src: url('../fonts/samo-sans/3716mo-sans15_3_0.eot?#iefix') format('embedded-opentype'),url('../fonts/samo-sans/371615_3_0.woff2') format('woff2'),url('../fonts/samo-sans/371615_3_0.woff') format('woff'),url('../fonts/samo-sans/371615_3_0.ttf') format('truetype');}

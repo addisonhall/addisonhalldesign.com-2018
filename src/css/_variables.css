@@ -1,0 +1,9 @@
+:root {
+    /* Colors */
+    --color-primary: #FF4C00;
+    --color-secondary: #585649;
+
+    /* Font sizes */
+    --body-font-size: 1rem;
+    --lg-body-font-size: 1.15rem;
+}

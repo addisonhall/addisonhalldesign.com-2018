@@ -1,0 +1,29 @@
+/* 
+ * Basscss negative margins are currently busted.
+ * Suggested fix: https://github.com/basscss/basscss/issues/224
+ */
+.mxn1 { margin-left: calc(var(--space-1) * -1); margin-right: calc(var(--space-1) * -1); }
+.mxn2 { margin-left: calc(var(--space-2) * -1); margin-right: calc(var(--space-2) * -1); }
+.mxn3 { margin-left: calc(var(--space-3) * -1); margin-right: calc(var(--space-3) * -1); }
+.mxn4 { margin-left: calc(var(--space-4) * -1); margin-right: calc(var(--space-4) * -1); }
+
+@media (--breakpoint-sm) {
+    .sm-mxn1 { margin-left: calc(var(--space-1) * -1); margin-right: calc(var(--space-1) * -1); }
+    .sm-mxn2 { margin-left: calc(var(--space-2) * -1); margin-right: calc(var(--space-2) * -1); }
+    .sm-mxn3 { margin-left: calc(var(--space-3) * -1); margin-right: calc(var(--space-3) * -1); }
+    .sm-mxn4 { margin-left: calc(var(--space-4) * -1); margin-right: calc(var(--space-4) * -1); }
+}
+
+@media (--breakpoint-md) {
+    .md-mxn1 { margin-left: calc(var(--space-1) * -1); margin-right: calc(var(--space-1) * -1); }
+    .md-mxn2 { margin-left: calc(var(--space-2) * -1); margin-right: calc(var(--space-2) * -1); }
+    .md-mxn3 { margin-left: calc(var(--space-3) * -1); margin-right: calc(var(--space-3) * -1); }
+    .md-mxn4 { margin-left: calc(var(--space-4) * -1); margin-right: calc(var(--space-4) * -1); }
+}
+
+@media (--breakpoint-lg) {
+    .lg-mxn1 { margin-left: calc(var(--space-1) * -1); margin-right: calc(var(--space-1) * -1); }
+    .lg-mxn2 { margin-left: calc(var(--space-2) * -1); margin-right: calc(var(--space-2) * -1); }
+    .lg-mxn3 { margin-left: calc(var(--space-3) * -1); margin-right: calc(var(--space-3) * -1); }
+    .lg-mxn4 { margin-left: calc(var(--space-4) * -1); margin-right: calc(var(--space-4) * -1); }
+}
