@@ -1,14 +1,20 @@
 body {
     color: var(--color-secondary);
-    font-family: 'SamoSans', sans-serif;
+    font-family: 'KlinikSlab', serif;
     font-feature-settings: "liga" 1;
     font-size: var(--body-font-size);
-    letter-spacing: -0.0125em;
+    /* letter-spacing: -0.0125em; */
 }
 @media (--breakpoint-lg) {
     body {
         font-size: var(--lg-body-font-size);
     }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'SamoSans', sans-serif;
+    font-feature-settings: "liga" 1;
+    font-weight: 700;
 }
 
 /* Letter-spacing */
@@ -25,18 +31,20 @@ body {
 
 /* Intro text */
 .intro-hdr {
+    font-family: 'KlinikSlab', serif;
     font-size: 2rem;
+    font-weight: 200;
     letter-spacing: -0.015em;
 }
 @media (--breakpoint-sm) {
     .intro-hdr {
         font-size: 3rem;
-        letter-spacing: -0.025em;
+        /* letter-spacing: -0.025em; */
     }
 }
 @media (--breakpoint-md) {
     .intro-hdr {
-        font-size: 6.2vw;
-        letter-spacing: -0.0325em;
+        font-size: 6.5vw;
+        /* letter-spacing: -0.0325em; */
     }
 }

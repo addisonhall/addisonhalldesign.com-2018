@@ -1,6 +1,7 @@
 @media (--breakpoint-md) {
     .figure-full-screen {
         position: relative;
+        margin-right: -36px;
     }
     .figure-full-screen figcaption {
         position: absolute;
