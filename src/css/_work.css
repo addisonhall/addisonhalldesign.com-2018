@@ -1,0 +1,18 @@
+/* .section-work {
+    margin-right: -36px;
+} */
+
+.work-list li {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.work-list a {
+    background-color: rgba(255, 76, 0, 0.8);
+    transition: background-color .5s ease;
+}
+
+.work-list a:focus, .work-list a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
