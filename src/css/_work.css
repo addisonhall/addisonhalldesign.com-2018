@@ -10,9 +10,11 @@
 
 .work-list a {
     background-color: rgba(255, 76, 0, 0.8);
+    color: #fff;
     transition: background-color .5s ease;
 }
 
 .work-list a:focus, .work-list a:hover {
     background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
 }
