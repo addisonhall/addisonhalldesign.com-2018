@@ -1,0 +1,12 @@
+body {
+    border-top: 18px solid var(--color-primary);
+}
+
+a {
+    color: var(--color-darker-primary);
+    transition: color .3s ease;
+}
+
+a:focus, a:hover {
+    color: var(--color-primary);
+}
