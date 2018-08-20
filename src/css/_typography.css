@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Letter-spacing */
+.ls-0 { letter-spacing: 0; }
 .ls-1 { letter-spacing: 0.025em; }
 .ls-2 { letter-spacing: 0.05em; }
 .ls-3 { letter-spacing: 0.075em; }
@@ -28,21 +29,6 @@ h1, h2, h3, h4, h5, h6 {
 .ls-n3 { letter-spacing: -0.075em; }
 .ls-n4 { letter-spacing: -0.1em; }
 
-/* Intro text */
-.intro-hdr {
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: -0.015em;
-}
-@media (--breakpoint-sm) {
-    .intro-hdr {
-        font-size: 3rem;
-        letter-spacing: -0.025em;
-    }
-}
-@media (--breakpoint-md) {
-    .intro-hdr {
-        font-size: 6vw;
-        letter-spacing: -0.0325em;
-    }
+.lowercase {
+    text-transform: none;
 }

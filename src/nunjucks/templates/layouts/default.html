@@ -13,39 +13,14 @@
     </head>
     <body class="home">
 
-        <header class="site-header pt3 pb3 px2 md-px4" role="header">
-            <div class="mx-auto">
-                <div class="clearfix">
-                    <div class="col">
-                        <img src="{{ urlPath }}/assets/img/ahd-logo.svg" class="site-logo">
-                    </div>
-                </div>
-            </div>
-        </header>
+        {% block header %}
+            {% include "includes/header.html" %}
+        {% endblock %}
 
-        <main class="site-main" role="main">
-            {% block content -%}{%- endblock %}
-        </main>
+        {% block content -%}{%- endblock %}
 
-        <footer class="site-footer bg-white">
-            {# <figure class="figure-full-screen m0 p0">
-                <img src="{{ urlPath }}/assets/img/heroes-on-a-shelf-orange.jpg" alt="Heroes on the shelf at Addison Hall Design" class="fit">
-                <figcaption class="white caps h5 px2 md-px0">Heroes on the shelf</figcaption>
-            </figure> #}
-            <div class="py2 md-py4 px2 md-px4">
-                <div class="clearfix mxn2">
-                    <div class="col col-12 md-col-6 lg-col-5 px2">
-                        <p class="h4 bold">
-                            Addison Hall is a proud type nerd.<br>
-                            This little site was built using <a href="https://mozilla.github.io/nunjucks/">Nunjucks</a> and <a href="https://postcss.org/">PostCSS</a>.
-                        </p>
-                    </div>
-                    <div class="col col-12 md-col-6 lg-col-5 px2">
-                        <p class="h4 bold">&copy; 2018 Addison Hall Design</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        {% include "includes/footer.html" %}
+
         <script src="{{ urlPath }}/assets/js/site.js"></script>
     </body>
 </html>

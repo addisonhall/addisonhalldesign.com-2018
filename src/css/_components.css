@@ -1,0 +1,49 @@
+.home-intro-wrapper {
+    background: #fff url('../img/heroes-on-a-shelf-lite-gray.jpg') no-repeat center top;
+    background-size: cover;
+    /* border-top: 9px solid var(--color-primary); */
+}
+
+@media (--breakpoint-md) {
+    .home-intro-wrapper {
+        height: calc(100vh - 52px);
+    }
+}
+
+/* Intro text */
+.intro-hdr {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+}
+@media (--breakpoint-sm) {
+    .intro-hdr {
+        font-size: 2.6rem;
+        letter-spacing: -0.025em;
+    }
+}
+
+/* Work stuff */
+.work-list li {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    border-top: 1px solid #fff;
+}
+
+@media (--breakpoint-sm) {
+    .work-list li:nth-child(2n) {
+        border-left: 1px solid #fff;
+    }
+}
+
+.work-list a {
+    background-color: rgba(255, 76, 0, 0.8);
+    color: #fff;
+    transition: background-color .5s ease;
+}
+
+.work-list a:focus, .work-list a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
