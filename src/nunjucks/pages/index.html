@@ -48,7 +48,7 @@
 
             {% include "includes/header.html" %}
 
-            <main class="site-main max-width-4" role="main">
+            <main class="site-main max-width-4 pb4" role="main">
 
                 <section class="section-intro px2 md-px4">
                     <div class="flex">
@@ -64,7 +64,7 @@
                             <p class="">I&rsquo;m a designer, web developer, and a bit of a WordPress nerd working out of working out of <a href="https://www.google.com/maps/place/Addison+Hall+Design,+LLC/@32.364408,-90.016858,15z/data=!4m5!3m4!1s0x0:0x4c056df4f8e10bb4!8m2!3d32.364408!4d-90.016858" target="_blank">my little office in Brandon, Mississippi</a>. Since 2005, I&rsquo;ve worked with a lot of great people, both as clients and collaborators. So whether you&rsquo;re an organization in need of a complete website or you&rsquo;re a designer who needs help with code, I&rsquo;m happy to help however I can.</p>
                         </div>
                         <div class="col-12 sm-col-6 md-col-5 px2">
-                            <p><strong>Need to know more?</strong> Email me at <a href="mailto:ah@addisonhalldesign.com">ah@addisonhalldesign.com</a>. You may also find me on <a href="https://www.linkedin.com/in/addison-hall/" target="_blank">LinkedIn</a> and <a href="https://github.com/addisonhall" target="_blank">GitHub</a>, but I rarely write on my <a href="http://addisonhall.com/" target="_blank">blog</a>.</p>
+                            <p><strong>Would you like to talk?</strong> Email me at <a href="mailto:ah@addisonhalldesign.com">ah@addisonhalldesign.com</a>. You may also find me on <a href="https://www.linkedin.com/in/addison-hall/" target="_blank">LinkedIn</a> and <a href="https://github.com/addisonhall" target="_blank">GitHub</a>, but I rarely write on my <a href="http://addisonhall.com/" target="_blank">blog</a>.</p>
                         </div>
                     </div>
                 </section>
@@ -79,9 +79,10 @@
                 <ul class="list-reset work-list mt0 md-flex flex-wrap">
 
                     {% for item in work %}
-                        <li class="col-12 md-col-6 flex" style="background-image:url('{{item.image}}');">
-                            <a class="white bold caps ls-3 text-decoration-none p2 py4 md-p4 flex-auto" href="{{item.link}}" target="_blank">{{item.name}}
-                            <span class="block h5 regular">{{item.description}}</span>
+                        <li class="col-12 md-col-6 flex work-list-item" style="background-image:url('{{item.image}}');">
+                            <a class="white bold caps ls-3 text-decoration-none p2 py4 md-p4 flex-auto work-list-name" href="{{item.link}}" target="_blank">
+                                {{item.name}}
+                                <span class="block h5 regular work-list-description">{{item.description}}</span>
                             </a>
                         </li>
                     {% endfor %}

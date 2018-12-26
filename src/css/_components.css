@@ -1,14 +1,14 @@
 .home-intro-wrapper {
-    background: #fff url('../img/heroes-on-a-shelf-lite-gray.jpg') no-repeat center top;
+    /* background: #fff url('../img/heroes-on-a-shelf-lite-gray.jpg') no-repeat center top; */
     background-size: cover;
     /* border-top: 9px solid var(--color-primary); */
 }
 
-@media (--breakpoint-md) {
+/* @media (--breakpoint-md) and (min-height: 596px) {
     .home-intro-wrapper {
         height: calc(100vh - 52px);
     }
-}
+} */
 
 /* Intro text */
 .intro-hdr {
@@ -28,22 +28,38 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top left;
-    border-top: 1px solid #fff;
+    /* border-top: 6px solid #fff; */
 }
 
-@media (--breakpoint-sm) {
+/* @media (--breakpoint-sm) {
     .work-list li:nth-child(2n) {
-        border-left: 1px solid #fff;
+        border-left: 6px solid #fff;
     }
-}
+} */
 
 .work-list a {
-    background-color: rgba(255, 76, 0, 0.8);
+    background-color: rgba(255, 76, 0, 0.9);
     color: #fff;
     transition: background-color .5s ease;
 }
 
+.work-list-description::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    background-color: #fff;
+    position: relative;
+    top: 0.75em;
+}
+
+/* .work-list li:nth-child(2) a,
+.work-list li:nth-child(3) a,
+.work-list li:nth-child(6) a {
+    background-color: rgba(255, 76, 0, 0.9);
+} */
+
 .work-list a:focus, .work-list a:hover {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
 }
