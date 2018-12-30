@@ -35,3 +35,40 @@
 @font-face {font-family: 'SamoSans';font-weight: bold;font-style: italic;src: url('../fonts/samo-sans/371615_1_0.eot');src: url('../fonts/samo-sans/371615_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/samo-sans/371615_1_0.woff2') format('woff2'),url('../fonts/samo-sans/371615_1_0.woff') format('woff'),url('../fonts/samo-sans/371615_1_0.ttf') format('truetype');}
 @font-face {font-family: 'SamoSans';font-weight: bold;font-style: normal;src: url('../fonts/samo-sans/371615_2_0.eot');src: url('../fonts/samo-sans/371615_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/samo-sans/371615_2_0.woff2') format('woff2'),url('../fonts/samo-sans/371615_2_0.woff') format('woff'),url('../fonts/samo-sans/371615_2_0.ttf') format('truetype');}
 @font-face {font-family: 'SamoSans';font-weight: normal;font-style: normal;src: url('../fonts/samo-sans/371615_3_0.eot');src: url('../fonts/samo-sans/3716mo-sans15_3_0.eot?#iefix') format('embedded-opentype'),url('../fonts/samo-sans/371615_3_0.woff2') format('woff2'),url('../fonts/samo-sans/371615_3_0.woff') format('woff'),url('../fonts/samo-sans/371615_3_0.ttf') format('truetype');}
+
+/**
+ * @license
+ * MyFonts Webfont Build ID 3691499, 2018-12-27T20:29:09-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: ConfigRounded-Bold by Adam Ladd
+ * URL: https://www.myfonts.com/fonts/adam-ladd/config-rounded/bold/
+ * 
+ * Webfont: ConfigRounded-BoldItalic by Adam Ladd
+ * URL: https://www.myfonts.com/fonts/adam-ladd/config-rounded/bold-italic/
+ * 
+ * Webfont: ConfigRounded-Italic by Adam Ladd
+ * URL: https://www.myfonts.com/fonts/adam-ladd/config-rounded/italic/
+ * 
+ * Webfont: ConfigRounded-Regular by Adam Ladd
+ * URL: https://www.myfonts.com/fonts/adam-ladd/config-rounded/regular/
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3691499
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright &#x00A9; 2018 by Adam Ladd. All rights reserved.
+ * 
+ * © 2018 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3853eb");
+@font-face {font-family: 'ConfigRounded';font-weight: bold;font-style: normal;src: url('../fonts/config-rounded/3853EB_0_0.eot');src: url('../fonts/config-rounded/3853EB_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/config-rounded/3853EB_0_0.woff2') format('woff2'),url('../fonts/config-rounded/3853EB_0_0.woff') format('woff'),url('../fonts/config-rounded/3853EB_0_0.ttf') format('truetype');}
+@font-face {font-family: 'ConfigRounded';font-weight: bold;font-style: italic;src: url('../fonts/config-rounded/3853EB_1_0.eot');src: url('../fonts/config-rounded/3853EB_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/config-rounded/3853EB_1_0.woff2') format('woff2'),url('../fonts/config-rounded/3853EB_1_0.woff') format('woff'),url('../fonts/config-rounded/3853EB_1_0.ttf') format('truetype');}
+@font-face {font-family: 'ConfigRounded';font-weight: normal;font-style: italic;src: url('../fonts/config-rounded/3853EB_2_0.eot');src: url('../fonts/config-rounded/3853EB_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/config-rounded/3853EB_2_0.woff2') format('woff2'),url('../fonts/config-rounded/3853EB_2_0.woff') format('woff'),url('../fonts/config-rounded/3853EB_2_0.ttf') format('truetype');}
+@font-face {font-family: 'ConfigRounded';font-weight: normal;font-style: normal;src: url('../fonts/config-rounded/3853EB_3_0.eot');src: url('../fonts/config-rounded/3853EB_3_0.eot?#iefix') format('embedded-opentype'),url('../fonts/config-rounded/3853EB_3_0.woff2') format('woff2'),url('../fonts/config-rounded/3853EB_3_0.woff') format('woff'),url('../fonts/config-rounded/3853EB_3_0.ttf') format('truetype');}

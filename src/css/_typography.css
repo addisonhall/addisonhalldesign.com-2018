@@ -1,9 +1,10 @@
 body {
     color: var(--color-secondary);
-    font-family: 'SamoSans', sans-serif;
+    font-family: 'ConfigRounded', sans-serif;
     font-feature-settings: "liga" 1;
+    font-kerning: normal;
     font-size: var(--body-font-size);
-    letter-spacing: -0.0125em;
+    /* letter-spacing: -0.0125em; */
 }
 @media (--breakpoint-lg) {
     body {
