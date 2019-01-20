@@ -3,8 +3,9 @@
     --color-primary: #FF4C00;
     --color-darker-primary: #b93900;
     --color-secondary: #585649;
+    --color-darker-secondary: #3a3203;
 
     /* Font sizes */
-    --body-font-size: 1rem;
-    --lg-body-font-size: 1.2rem;
+    --body-font-size: 18px;
+    --lg-body-font-size: 24px;
 }

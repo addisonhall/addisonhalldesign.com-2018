@@ -2,6 +2,7 @@
 .ahd-orange { color: var(--color-primary); }
 .ahd-darker-orange { color: #b93900; }
 .ahd-dark-gray { color: var(--color-secondary); }
+.ahd-darker-gray { color: #3a3203; }
 .ahd-medium-gray { color: #7f7d71; }
 .ahd-light-gray { color: #E0DBD4; }
 .ahd-lighter-gray { color: #F1EFEA; }
@@ -12,6 +13,7 @@
 .ahd-bg-orange { background-color: var(--color-primary); }
 .ahd-bg-darker-orange { background-color: #b93900; }
 .ahd-bg-dark-gray { background-color: var(--color-secondary); }
+.ahd-bg-darker-gray { background-color: #3a3203; }
 .ahd-bg-medium-gray { background-color: #7f7d71; }
 .ahd-bg-light-gray { background-color: #E0DBD4; }
 .ahd-bg-lighter-gray { background-color: #F1EFEA; }
@@ -22,6 +24,7 @@
 .ahd-border-orange { border-color: var(--color-primary); }
 .ahd-border-darker-orange { border-color: #b93900; }
 .ahd-border-dark-gray { border-color: var(--color-secondary); }
+.ahd-border-darker-gray { border-color: #3a3203; }
 .ahd-border-medium-gray { border-color: #7f7d71; }
 .ahd-border-light-gray { border-color: #E0DBD4; }
 .ahd-border-lighter-gray { border-color: #F1EFEA; }

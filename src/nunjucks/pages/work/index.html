@@ -1,0 +1,94 @@
+{% extends "layouts/default.html" %}
+
+    {% set work = [
+        {
+            name: 'Blanchard Group',
+            description: 'Master planning architectural firm',
+            image: 'assets/img/work-blanchard.jpg',
+            link: 'http://blanchardgroup.com'
+        },
+        {
+            name: 'Durfold',
+            description: 'Health care furnishings provider',
+            image: 'assets/img/work-durfold.jpg',
+            link: 'http://durfold.com'
+        },
+        {
+            name: 'Mississippi Folklife',
+            description: 'Mississippi Arts Commission Magazine',
+            image: 'assets/img/work-msfolklife.jpg',
+            link: 'http://mississippifolklife.com'
+        },
+        {
+            name: 'HORNE LLP',
+            description: 'National accounting and advisory firm',
+            image: 'assets/img/work-horne.jpg',
+            link: 'http://hornellp.com'
+        },
+        {
+            name: 'Luckney Animal Hospital',
+            description: 'Local veterinarian',
+            image: 'assets/img/work-luckney.jpg',
+            link: 'http://luckneyanimal.com'
+        },
+        {
+            name: 'Cress Group',
+            description: 'Commercial real estate firm',
+            image: 'assets/img/work-cress-group.jpg',
+            link: 'http://cresscre.com'
+        }
+    ]%}
+
+    {# Blank out the default header #}
+    {% block header %}{% endblock %}
+
+    {% block content %}
+
+        <div class="home-intro-wrapper">
+
+            {% include "includes/header.html" %}
+
+            <main class="site-main max-width-4 pb4" role="main">
+
+                <section class="section-intro px2 md-px4">
+                    <div class="flex">
+                        <div class="col md-col-12">
+                            <h1 class="big-type mt0 mb0"><span class="ahd-orange">Addison Hall Design</span> is a small design shop that creates web stuff for all sorts of awesome people.</h1>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-about px2 md-px4">
+                    <div class="sm-flex mxn2">
+                        <div class="col-12 sm-col-6 md-col-5 px2">
+                            <p class="">I&rsquo;m a designer, web developer, and a bit of a WordPress nerd working out of working out of <a href="https://www.google.com/maps/place/Addison+Hall+Design,+LLC/@32.364408,-90.016858,15z/data=!4m5!3m4!1s0x0:0x4c056df4f8e10bb4!8m2!3d32.364408!4d-90.016858" target="_blank">my little office in Brandon, Mississippi</a>. Since 2005, I&rsquo;ve worked with a lot of great people, both as clients and collaborators. So whether you&rsquo;re an organization in need of a complete website or you&rsquo;re a designer who needs help with code, I&rsquo;m happy to help however I can.</p>
+                        </div>
+                        <div class="col-12 sm-col-6 md-col-5 px2">
+                            <p><strong>Would you like to talk?</strong> Email me at <a href="mailto:ah@addisonhalldesign.com">ah@addisonhalldesign.com</a>. You may also find me on <a href="https://www.linkedin.com/in/addison-hall/" target="_blank">LinkedIn</a> and <a href="https://github.com/addisonhall" target="_blank">GitHub</a>, but I rarely write on my <a href="http://addisonhall.com/" target="_blank">blog</a>.</p>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+        </div>
+
+        <section class="section-work">
+            <div class="clearfix">
+                <h1 class="h4 p2 md-px4 m0 bold ahd-white ahd-bg-dark-gray">Check out some of the awesome people I&rsquo;ve worked with:</h1>
+                <ul class="list-reset work-list mt0 md-flex flex-wrap">
+
+                    {% for item in work %}
+                        <li class="col-12 md-col-6 flex work-list-item" style="background-image:url('{{item.image}}');">
+                            <a class="white bold caps ls-3 text-decoration-none p2 py4 md-p4 flex-auto work-list-name" href="{{item.link}}" target="_blank">
+                                {{item.name}}
+                                <span class="block h5 regular work-list-description">{{item.description}}</span>
+                            </a>
+                        </li>
+                    {% endfor %}
+                 
+                </ul>
+            </div>
+        </section>
+
+    {% endblock %}

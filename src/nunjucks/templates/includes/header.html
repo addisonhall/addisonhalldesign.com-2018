@@ -1,9 +1,10 @@
-<header class="site-header pt3 pb2 px2 md-px4" role="header">
-    <div class="mx-auto">
-        <div class="clearfix">
-            <div class="col">
-                <img src="{{ urlPath }}/assets/img/ahd-logo.svg" class="site-logo">
-            </div>
+<header class="site-header px2 md-px4 ahd-bg-white" role="header">
+    <div class="md-flex pt3 pb2{% if page_title !== "Welcome" %} border-bottom ahd-border-light-gray{% endif %}">
+        <div class="md-col-3">
+            <a href="/"><img src="{{ urlPath }}/assets/img/ahd-logo.svg" class="site-logo"></a>
+        </div>
+        <div class="md-col-9">
+            {% include "includes/nav.html" %}
         </div>
     </div>
 </header>

@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     nunjucksRender = require('gulp-nunjucks-render'),
     postcss = require('gulp-postcss'),
+    purgecss = require('gulp-purgecss'),
     cssnano = require('cssnano'),
     cssImport = require('postcss-import'),
     cssCustomMedia = require('postcss-custom-media'),
@@ -60,6 +61,11 @@ gulp.task('css', function () {
     ]
     gulp.src('./src/css/site.css')
         .pipe(postcss(plugins))
+        .pipe(
+            purgecss({
+                content: ['./src/nunjucks/**/*.html']
+            })
+        )
         .pipe(sourcemaps.init())
         .on('error', gutil.log)
         .pipe(sourcemaps.write('.'))
@@ -100,12 +106,12 @@ gulp.task('connect', function() {
 	});
 });
 
-// watch these files (removed './' because of gaze bug?)
+// watch these files
 gulp.task('watch', function () {
-    gulp.watch(['src/nunjucks/pages/**/*.html', 'src/nunjucks/templates/layouts/*.html', 'src/nunjucks/templates/includes/*.html'], ['nunjucks']);
-    gulp.watch(['src/css/**/*.css'], ['css']);
-	gulp.watch(['src/js/*.js'], ['js']);
-	gulp.watch(['src/img/*'], ['images']);
+    gulp.watch(['./src/nunjucks/pages/**/*.html', './src/nunjucks/templates/layouts/*.html', './src/nunjucks/templates/includes/*.html'], ['nunjucks']);
+    gulp.watch(['./src/css/**/*.css'], ['css']);
+	gulp.watch(['./src/js/*.js'], ['js']);
+	gulp.watch(['./src/img/*'], ['images']);
 });
 
 // run default task

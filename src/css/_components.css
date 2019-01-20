@@ -1,3 +1,14 @@
+.site-logo {
+    width: 50px;
+    height: auto;
+    display: block;
+}
+
+.site-nav {
+    font-family: 'SamoSans', sans-serif;
+    font-size: 0.9em;
+}
+
 .home-intro-wrapper {
     /* background: #fff url('../img/heroes-on-a-shelf-lite-gray.jpg') no-repeat center top; */
     background-size: cover;
@@ -13,7 +24,6 @@
 /* Intro text */
 .intro-hdr {
     font-size: 2rem;
-    font-weight: 700;
     letter-spacing: -0.015em;
     /* text-transform: uppercase; */
 }
@@ -63,4 +73,8 @@
 .work-list a:focus, .work-list a:hover {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
+}
+
+.site-footer {
+    font-size: 0.8em;
 }
