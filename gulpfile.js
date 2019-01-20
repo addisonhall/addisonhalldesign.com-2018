@@ -1,27 +1,28 @@
 // include gulp and required node modules
-var gulp = require('gulp'),
-    gutil = require('gulp-util'),
-    data = require('gulp-data'),
-    fs = require('fs'),
-    imagemin = require('gulp-imagemin'),
-    nunjucksRender = require('gulp-nunjucks-render'),
-    postcss = require('gulp-postcss'),
-    purgecss = require('gulp-purgecss'),
-    cssnano = require('cssnano'),
-    cssImport = require('postcss-import'),
-    cssCustomMedia = require('postcss-custom-media'),
-    cssCustomProperties = require('postcss-custom-properties'),
-    cssCalc = require('postcss-calc'),
-    sourcemaps = require('gulp-sourcemaps'),
-    concat = require('gulp-concat'),
-    jsuglify = require('gulp-uglify-es').default,
-    connect = require('gulp-connect');
+const { src, dest, parallel } = require('gulp')
+const gulp = require('gulp')
+const gutil = require('gulp-util')
+const data = require('gulp-data')
+const fs = require('fs')
+const imagemin = require('gulp-imagemin')
+const nunjucksRender = require('gulp-nunjucks-render')
+const postcss = require('gulp-postcss')
+const purgecss = require('gulp-purgecss')
+const cssnano = require('cssnano')
+const cssImport = require('postcss-import')
+const cssCustomMedia = require('postcss-custom-media')
+const cssCustomProperties = require('postcss-custom-properties')
+const cssCalc = require('postcss-calc')
+const sourcemaps = require('gulp-sourcemaps')
+const concat = require('gulp-concat')
+const jsuglify = require('gulp-uglify-es').default
+const connect = require('gulp-connect')
 
 // process html (nunjucks)
-gulp.task('nunjucks', function () {
-    gulp.src('./src/nunjucks/pages/**/*.html')
+function nunjucks() {
+    return src('./src/nunjucks/pages/**/*.html')
         .pipe(data(function() {
-            return JSON.parse(fs.readFileSync('config.json'));
+            return JSON.parse(fs.readFileSync('config.json'))
         }))
         .pipe(nunjucksRender({
             path: ['./src/nunjucks/templates/'],
@@ -30,28 +31,12 @@ gulp.task('nunjucks', function () {
             }
         }))
 		.on('error', gutil.log)
-		.pipe(gulp.dest('./dist/'))
-		.pipe(connect.reload());
-});
-
-// Process nunjucks for live HTML
-gulp.task('liveHtml', function () {
-    gulp.src('./src/nunjucks/pages/**/*.html')
-        .pipe(data(function() {
-            return JSON.parse(fs.readFileSync('config.json'));
-        }))
-        .pipe(nunjucksRender({
-            path: ['./src/nunjucks/templates/'],
-            data: {
-                urlPath: 'https://addisonhalldesign.com'
-            }
-        }))
-		.on('error', gutil.log)
-		.pipe(gulp.dest('./dist/'));
-});
+        .pipe(dest('./dist/'))
+        .pipe(connect.reload())
+}
 
 // process css (postcss)
-gulp.task('css', function () {
+function css() {
     var plugins = [
         cssImport,
         cssCustomMedia,
@@ -59,7 +44,7 @@ gulp.task('css', function () {
         cssCalc,
         cssnano
     ]
-    gulp.src('./src/css/site.css')
+    return src('./src/css/site.css')
         .pipe(postcss(plugins))
         .pipe(
             purgecss({
@@ -69,50 +54,58 @@ gulp.task('css', function () {
         .pipe(sourcemaps.init())
         .on('error', gutil.log)
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./dist/assets/css/'))
-        .pipe(connect.reload());
-});
+        .pipe(dest('./dist/assets/css/'))
+        .pipe(connect.reload())
+}
 
 // process js
-gulp.task('js', function () {
-	gulp.src([
+function js() {
+	return src([
             './src/js/site.js'
         ])
 		.pipe(concat('site.js'))
 		.pipe(jsuglify())
 		.on('error', gutil.log)
-		.pipe(gulp.dest('./dist/assets/js/'))
-		.pipe(connect.reload());
-});
+        .pipe(dest('./dist/assets/js/'))
+        .pipe(connect.reload())
+}
 
 // process images
-gulp.task('images', function() {
-    gulp.src('./src/img/*')
+function images() {
+    return src('./src/img/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('./dist/assets/img/'))
-});
+        .pipe(dest('./dist/assets/img/'))
+        .pipe(connect.reload())
+}
 
 // copy fonts
-gulp.task('copyfonts', function() {
-    gulp.src('./src/fonts/**/*.{ttf,woff,woff2,eof,svg}')
-    .pipe(gulp.dest('./dist/assets/fonts'));
-});
+function copyFonts() {
+    return src('./src/fonts/**/*.{ttf,woff,woff2,eof,svg}')
+    .pipe(dest('./dist/assets/fonts'))
+    .pipe(connect.reload())
+}
 
 // live reload
-gulp.task('connect', function() {
+function runServer() {
 	connect.server({
-		root: 'dist',
-		livereload: true
-	});
-});
+        root: 'dist',
+        livereload: true
+	})
+}
 
 // watch these files
-gulp.task('watch', function () {
-    gulp.watch(['./src/nunjucks/pages/**/*.html', './src/nunjucks/templates/layouts/*.html', './src/nunjucks/templates/includes/*.html'], ['nunjucks']);
-    gulp.watch(['./src/css/**/*.css'], ['css']);
-	gulp.watch(['./src/js/*.js'], ['js']);
-	gulp.watch(['./src/img/*'], ['images']);
-});
+function watchFiles() {
+    gulp.watch('./src/nunjucks/**/*.html', nunjucks)
+    gulp.watch('./src/css/**/*.css', css)
+	gulp.watch('./src/js/*.js', js)
+	gulp.watch('./src/img/*', images)
+}
 
-// run default task
-gulp.task('default', ['nunjucks', 'css', 'js', 'images', 'connect', 'watch']).on('error', gutil.log);
+exports.nunjucks = nunjucks
+exports.css = css
+exports.js = js
+exports.images = images
+exports.copyFonts = copyFonts
+exports.runServer = runServer
+exports.watchFiles = watchFiles
+exports.default = parallel(nunjucks, css, js, runServer, watchFiles)
