@@ -1,9 +1,10 @@
 body {
     color: var(--color-darker-secondary);
-    font-family: 'KlinikSlab', serif;
+    font-family: whitman, serif;
+    /* font-family: 'KlinikSlab', serif; */
     /* font-family: 'SamoSans', sans-serif; */
     /* font-family: 'ConfigRounded', sans-serif; */
-    font-feature-settings: "kern" 1, "liga" 1, "case" 1;
+    font-feature-settings: "kern" 1, "liga" 1, "case" 1, "onum" 1;
     font-kerning: normal;
     font-size: var(--body-font-size);
     /* line-height: 1.45; */
@@ -23,9 +24,9 @@ blockquote, dl, ol, p, pre, ul {
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--color-darker-secondary);
-    /* font-family: 'SamoSans', sans-serif; */
-    font-feature-settings: "liga" 1;
-    font-weight: 700;
+    font-family: benton-sans, sans-serif;
+    /* font-feature-settings: "liga" 1; */
+    font-weight: 800;
     line-height: 1.125;
     margin-bottom: 0.125em;
 }
