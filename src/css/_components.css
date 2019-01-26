@@ -5,7 +5,7 @@
 }
 
 .site-nav {
-    font-family: 'SamoSans', sans-serif;
+    /* font-family: 'SamoSans', sans-serif; */
     font-size: 0.9em;
 }
 
@@ -35,21 +35,21 @@
 }
 
 /* Work stuff */
+.work-list {
+    margin-left: -1px;
+    margin-right: -2px;
+}
+
 .work-list li {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top left;
-    /* border-top: 6px solid #fff; */
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
 }
 
-/* @media (--breakpoint-sm) {
-    .work-list li:nth-child(2n) {
-        border-left: 6px solid #fff;
-    }
-} */
-
 .work-list a {
-    background-color: rgba(255, 76, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     transition: background-color .5s ease;
 }

@@ -39,26 +39,66 @@
 /**
  * Klinik Slab
  */
-/* @font-face {
+@font-face {
     font-family: 'KlinikSlab';
-    src: url('../fonts/klinik/klinicslabbook-webfont.eot');
-    src: url('../fonts/klinik/klinicslabbook-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/klinik/klinicslabbook-webfont.woff') format('woff'),
-    url('../fonts/klinik/klinicslabbook-webfont.ttf') format('truetype'),
-    url('../fonts/klinik/klinicslabbook-webfont.svg#klinic_slabbook') format('svg');
+    src: url('../fonts/klinic-slab/klinicslabbook-webfont.eot');
+    src: url('../fonts/klinic-slab/klinicslabbook-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/klinic-slab/klinicslabbook-webfont.woff') format('woff'),
+    url('../fonts/klinic-slab/klinicslabbook-webfont.ttf') format('truetype'),
+    url('../fonts/klinic-slab/klinicslabbook-webfont.svg#klinic_slabbook') format('svg');
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: 'KlinikSlab';
-    src: url('../fonts/klinik/klinicslabbookit-webfont.eot');
-    src: url('../fonts/klinik/klinicslabbookit-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/klinik/klinicslabbookit-webfont.woff') format('woff'),
-    url('../fonts/klinik/klinicslabbookit-webfont.ttf') format('truetype'),
-    url('../fonts/klinik/klinicslabbookit-webfont.svg#klinic_slabbook_italic') format('svg');
+    src: url('../fonts/klinic-slab/klinicslabbookit-webfont.eot');
+    src: url('../fonts/klinic-slab/klinicslabbookit-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/klinic-slab/klinicslabbookit-webfont.woff') format('woff'),
+    url('../fonts/klinic-slab/klinicslabbookit-webfont.ttf') format('truetype'),
+    url('../fonts/klinic-slab/klinicslabbookit-webfont.svg#klinic_slabbook_italic') format('svg');
     font-weight: 400;
     font-style: italic;
-} */
+}
+@font-face {
+    font-family: 'KlinikSlab';
+    src: url('../fonts/klinic-slab/klinicslabmedium-webfont.eot');
+    src: url('../fonts/klinic-slab/klinicslabmedium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/klinic-slab/klinicslabmedium-webfont.woff') format('woff'),
+    url('../fonts/klinic-slab/klinicslabmedium-webfont.ttf') format('truetype'),
+    url('../fonts/klinic-slab/klinicslabmedium-webfont.svg#klinic_slabbook') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KlinikSlab';
+    src: url('../fonts/klinic-slab/klinicslabmediumit-webfont.eot');
+    src: url('../fonts/klinic-slab/klinicslabmediumit-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/klinic-slab/klinicslabmediumit-webfont.woff') format('woff'),
+    url('../fonts/klinic-slab/klinicslabmediumit-webfont.ttf') format('truetype'),
+    url('../fonts/klinic-slab/klinicslabmediumit-webfont.svg#klinic_slabbook_italic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'KlinikSlab';
+    src: url('../fonts/klinic-slab/klinicslabbold-webfont.eot');
+    src: url('../fonts/klinic-slab/klinicslabbold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/klinic-slab/klinicslabbold-webfont.woff') format('woff'),
+    url('../fonts/klinic-slab/klinicslabbold-webfont.ttf') format('truetype'),
+    url('../fonts/klinic-slab/klinicslabbold-webfont.svg#klinic_slabbook') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KlinikSlab';
+    src: url('../fonts/klinic-slab/klinicslabboldit-webfont.eot');
+    src: url('../fonts/klinic-slab/klinicslabboldit-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/klinic-slab/klinicslabboldit-webfont.woff') format('woff'),
+    url('../fonts/klinic-slab/klinicslabboldit-webfont.ttf') format('truetype'),
+    url('../fonts/klinic-slab/klinicslabboldit-webfont.svg#klinic_slabbook_italic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
 
 /**
  * @license
@@ -91,11 +131,11 @@
 */
 
 /* @import must be at top of file, otherwise CSS will not work */
-/* @import url("//hello.myfonts.net/count/3853eb");
+@import url("//hello.myfonts.net/count/3853eb");
 @font-face {font-family: 'ConfigRounded';font-weight: bold;font-style: normal;src: url('../fonts/config-rounded/3853EB_0_0.eot');src: url('../fonts/config-rounded/3853EB_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/config-rounded/3853EB_0_0.woff2') format('woff2'),url('../fonts/config-rounded/3853EB_0_0.woff') format('woff'),url('../fonts/config-rounded/3853EB_0_0.ttf') format('truetype');}
 @font-face {font-family: 'ConfigRounded';font-weight: bold;font-style: italic;src: url('../fonts/config-rounded/3853EB_1_0.eot');src: url('../fonts/config-rounded/3853EB_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/config-rounded/3853EB_1_0.woff2') format('woff2'),url('../fonts/config-rounded/3853EB_1_0.woff') format('woff'),url('../fonts/config-rounded/3853EB_1_0.ttf') format('truetype');}
 @font-face {font-family: 'ConfigRounded';font-weight: normal;font-style: italic;src: url('../fonts/config-rounded/3853EB_2_0.eot');src: url('../fonts/config-rounded/3853EB_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/config-rounded/3853EB_2_0.woff2') format('woff2'),url('../fonts/config-rounded/3853EB_2_0.woff') format('woff'),url('../fonts/config-rounded/3853EB_2_0.ttf') format('truetype');}
-@font-face {font-family: 'ConfigRounded';font-weight: normal;font-style: normal;src: url('../fonts/config-rounded/3853EB_3_0.eot');src: url('../fonts/config-rounded/3853EB_3_0.eot?#iefix') format('embedded-opentype'),url('../fonts/config-rounded/3853EB_3_0.woff2') format('woff2'),url('../fonts/config-rounded/3853EB_3_0.woff') format('woff'),url('../fonts/config-rounded/3853EB_3_0.ttf') format('truetype');} */
+@font-face {font-family: 'ConfigRounded';font-weight: normal;font-style: normal;src: url('../fonts/config-rounded/3853EB_3_0.eot');src: url('../fonts/config-rounded/3853EB_3_0.eot?#iefix') format('embedded-opentype'),url('../fonts/config-rounded/3853EB_3_0.woff2') format('woff2'),url('../fonts/config-rounded/3853EB_3_0.woff') format('woff'),url('../fonts/config-rounded/3853EB_3_0.ttf') format('truetype');}
 
 /* Webfont: SSNicksonNo.6 */
 /* @font-face {

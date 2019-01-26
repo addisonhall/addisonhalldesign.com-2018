@@ -1,9 +1,15 @@
-<header class="site-header px2 md-px4 ahd-bg-white" role="header">
-    <div class="md-flex pt3 pb2{% if page_title !== "Welcome" %} border-bottom ahd-border-light-gray{% endif %}">
-        <div class="md-col-3">
+{% set hdr_border_classes = " border-bottom ahd-border-light-gray" %}
+
+{% if page_title == "Welcome" %}
+    {% set hdr_border_classes = "" %}
+{% endif %}
+
+<header class="site-header px2 md-px4{{ hdr_border_classes }}" role="header">
+    <div class="md-flex pt3 pb2">
+        <div class="md-col-4 pr2">
             <a href="/"><img src="{{ urlPath }}/assets/img/ahd-logo.svg" class="site-logo"></a>
         </div>
-        <div class="md-col-9">
+        <div class="md-col-8">
             {% include "includes/nav.html" %}
         </div>
     </div>

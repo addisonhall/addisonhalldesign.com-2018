@@ -1,6 +1,8 @@
 body {
     color: var(--color-darker-secondary);
-    font-family: dolly-new, serif;
+    font-family: 'KlinikSlab', serif;
+    /* font-family: 'SamoSans', sans-serif; */
+    /* font-family: 'ConfigRounded', sans-serif; */
     font-feature-settings: "liga" 1;
     font-kerning: normal;
     font-size: var(--body-font-size);
@@ -20,7 +22,7 @@ blockquote, dl, ol, p, pre, ul {
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--color-darker-secondary);
-    font-family: 'SamoSans', sans-serif;
+    /* font-family: 'SamoSans', sans-serif; */
     font-feature-settings: "liga" 1;
     font-weight: 700;
     line-height: 1.125;
@@ -42,20 +44,28 @@ h1 + h2 {
     margin-top: 1em;
 }
 
-h1 { font-size: 2.8em; letter-spacing: -0.025em; }
-h2 { font-size: 1.6em; letter-spacing: -0.0125em; }
+h1 {
+    font-size: 2.8em;
+    font-weight: 400;
+    /* letter-spacing: -0.025em; */
+}
+h2 {
+    font-size: 1.125em;
+    font-variant-caps: all-small-caps;
+    letter-spacing: 0.1em;
+}
 h3 { font-size: 1.2em; }
 h4 { font-size: 1em; }
 h5 { font-size: 1em; font-style: italic; }
 h6 { font-size: 0.9em; font-style: italic; }
 
-strong, b {
+/* strong, b {
     font-family: 'SamoSans', sans-serif;
-    /* font-size: 0.95em; */
-}
+    font-size: 0.95em;
+} */
 
 .font-serif {
-    font-family: dolly-new, serif;
+    font-family: 'KlinikSlab', serif;
 }
 .font-sans {
     font-family: 'SamoSans', sans-serif;
