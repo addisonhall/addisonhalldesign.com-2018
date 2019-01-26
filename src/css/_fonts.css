@@ -41,61 +41,43 @@
  */
 @font-face {
     font-family: 'KlinikSlab';
-    src: url('../fonts/klinic-slab/klinicslabbook-webfont.eot');
-    src: url('../fonts/klinic-slab/klinicslabbook-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/klinic-slab/klinicslabbook-webfont.woff') format('woff'),
-    url('../fonts/klinic-slab/klinicslabbook-webfont.ttf') format('truetype'),
-    url('../fonts/klinic-slab/klinicslabbook-webfont.svg#klinic_slabbook') format('svg');
+    src: url('../fonts/klinic-slab/klinicslabbook-webfont.woff2') format('woff2'),
+         url('../fonts/klinic-slab/klinicslabbook-webfont.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: 'KlinikSlab';
-    src: url('../fonts/klinic-slab/klinicslabbookit-webfont.eot');
-    src: url('../fonts/klinic-slab/klinicslabbookit-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/klinic-slab/klinicslabbookit-webfont.woff') format('woff'),
-    url('../fonts/klinic-slab/klinicslabbookit-webfont.ttf') format('truetype'),
-    url('../fonts/klinic-slab/klinicslabbookit-webfont.svg#klinic_slabbook_italic') format('svg');
+    src: url('../fonts/klinic-slab/klinicslabbookit-webfont.woff2') format('woff2'),
+         url('../fonts/klinic-slab/klinicslabbookit-webfont.woff') format('woff');
     font-weight: 400;
     font-style: italic;
 }
 @font-face {
     font-family: 'KlinikSlab';
-    src: url('../fonts/klinic-slab/klinicslabmedium-webfont.eot');
-    src: url('../fonts/klinic-slab/klinicslabmedium-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/klinic-slab/klinicslabmedium-webfont.woff') format('woff'),
-    url('../fonts/klinic-slab/klinicslabmedium-webfont.ttf') format('truetype'),
-    url('../fonts/klinic-slab/klinicslabmedium-webfont.svg#klinic_slabbook') format('svg');
+    src: url('../fonts/klinic-slab/klinicslabmedium-webfont.woff2') format('woff2'),
+         url('../fonts/klinic-slab/klinicslabmedium-webfont.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'KlinikSlab';
-    src: url('../fonts/klinic-slab/klinicslabmediumit-webfont.eot');
-    src: url('../fonts/klinic-slab/klinicslabmediumit-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/klinic-slab/klinicslabmediumit-webfont.woff') format('woff'),
-    url('../fonts/klinic-slab/klinicslabmediumit-webfont.ttf') format('truetype'),
-    url('../fonts/klinic-slab/klinicslabmediumit-webfont.svg#klinic_slabbook_italic') format('svg');
+    src: url('../fonts/klinic-slab/klinicslabmediumit-webfont.woff2') format('woff2'),
+         url('../fonts/klinic-slab/klinicslabmediumit-webfont.woff') format('woff');
     font-weight: 500;
     font-style: italic;
 }
 @font-face {
     font-family: 'KlinikSlab';
-    src: url('../fonts/klinic-slab/klinicslabbold-webfont.eot');
-    src: url('../fonts/klinic-slab/klinicslabbold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/klinic-slab/klinicslabbold-webfont.woff') format('woff'),
-    url('../fonts/klinic-slab/klinicslabbold-webfont.ttf') format('truetype'),
-    url('../fonts/klinic-slab/klinicslabbold-webfont.svg#klinic_slabbook') format('svg');
+    src: url('../fonts/klinic-slab/klinicslabbold-webfont.woff2') format('woff2'),
+         url('../fonts/klinic-slab/klinicslabbold-webfont.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: 'KlinikSlab';
-    src: url('../fonts/klinic-slab/klinicslabboldit-webfont.eot');
-    src: url('../fonts/klinic-slab/klinicslabboldit-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/klinic-slab/klinicslabboldit-webfont.woff') format('woff'),
-    url('../fonts/klinic-slab/klinicslabboldit-webfont.ttf') format('truetype'),
-    url('../fonts/klinic-slab/klinicslabboldit-webfont.svg#klinic_slabbook_italic') format('svg');
+    src: url('../fonts/klinic-slab/klinicslabboldit-webfont.woff2') format('woff2'),
+         url('../fonts/klinic-slab/klinicslabboldit-webfont.woff') format('woff');
     font-weight: 700;
     font-style: italic;
 }
