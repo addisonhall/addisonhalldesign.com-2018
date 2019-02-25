@@ -1,18 +1,19 @@
 body {
     color: var(--color-darker-secondary);
-    font-family: whitman, serif;
-    /* font-family: 'KlinikSlab', serif; */
-    /* font-family: 'SamoSans', sans-serif; */
-    /* font-family: 'ConfigRounded', sans-serif; */
+    font-family: 'jubilat', serif;
     font-feature-settings: "kern" 1, "liga" 1, "case" 1, "onum" 1;
     font-kerning: normal;
     font-size: var(--body-font-size);
-    /* line-height: 1.45; */
-    /* letter-spacing: -0.0125em; */
     text-rendering: auto;
 }
+
+.font-body {
+    font-size: var(--body-font-size);
+}
+
 @media (--breakpoint-lg) {
-    body {
+    body,
+    .font-body {
         font-size: var(--lg-body-font-size);
     }
 }
@@ -22,72 +23,48 @@ blockquote, dl, ol, p, pre, ul {
     margin-bottom: 0.75em;
 }
 
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-feature-settings: "liga" 1;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 0.25em;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: var(--color-darker-secondary);
-    font-family: benton-sans, sans-serif;
-    /* font-feature-settings: "liga" 1; */
-    font-weight: 800;
-    line-height: 1.125;
-    margin-bottom: 0.125em;
 }
 
 h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
     margin-top: 0;
 }
 
-/* p + h1, p + .h1, p + h2, p + .h2, p + h3, p + .h3, p + h4, p + .h4, p + h5, p + .h5,
-div + h1, div + .h1, div + h2, div + .h2, div + h3, div + .h3, div + h4, div + .h4, div + h5, div + .h5,
-ul + h1, ul + .h1, ul + h2, ul + .h2, ul + h3, ul + .h3, ul + h4, ul + .h4, ul + h5, ul + .h5,
-ol + h1, ol + .h1, ol + h2, ol + .h2, ol + h3, ol + .h3, ol + h4, ol + .h4, ol + h5, ol + .h5 {
-	margin-top: 1em;
-} */
-
 h1 + h2 {
     margin-top: 1em;
 }
 
-h1 {
+h1, .h1 {
     font-size: 2.8em;
-    font-weight: 400;
-    /* letter-spacing: -0.025em; */
 }
 h2 {
     font-size: 1.15em;
-    /* font-variant-caps: all-small-caps; */
-    /* font-feature-settings: "lnum" 1;
-    text-transform: uppercase;
-    letter-spacing: 0.075em; */
 }
-h3 { font-size: 1.15em; font-style: italic; }
+h3 {
+    font-size: 0.95em;
+}
 h4 { font-size: 1em; }
 h5 { font-size: 1em; font-style: italic; }
 h6 { font-size: 0.9em; font-style: italic; }
 
-/* strong, b {
-    font-family: 'SamoSans', sans-serif;
-    font-size: 0.95em;
-} */
-
-.font-serif {
-    font-family: 'KlinikSlab', serif;
-}
-.font-sans {
-    font-family: 'SamoSans', sans-serif;
-}
-
 .big-menu {
-    /* font-family: "KlinikSlab", serif; */
     font-size: 3.6rem;
     font-weight: bold;
     letter-spacing: -0.025em;
 }
 
 .page-title {
-    /* font-family: "KlinikSlab", serif; */
-    /* font-size: 3.6rem; */
     font-size: var(--body-font-size);
     font-weight: bold;
-    /* letter-spacing: -0.025em; */
 }
 @media (--breakpoint-lg) {
     .page-title {
@@ -96,10 +73,18 @@ h6 { font-size: 0.9em; font-style: italic; }
 }
 
 .big-type {
-    font-family: 'NicksonNo6', sans-serif;
-    font-size: 4.8em;
-    font-weight: normal;
+    font-size: 3.6em;
 }
+@media (--breakpoint-lg) {
+    .big-type {
+        font-size: 7.2em;
+        line-height: 1;
+        margin-bottom: -0.375em;
+    }
+}
+
+/* Font-weight */
+.font-weight-300 { font-weight: 300; }
 
 /* Letter-spacing */
 .ls-0 { letter-spacing: 0; }

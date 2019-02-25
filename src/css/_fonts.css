@@ -131,3 +131,32 @@
     font-weight: normal;
     text-rendering: optimizeLegibility;
 } */
+
+/* --- Greycliff --- */
+@font-face {
+    font-family: 'Greycliff';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/greycliff/GreycliffCF-Regular.eot');
+    src: url('../fonts/greycliff/GreycliffCF-Regular.eot?#iefix') format('embedded-opentype'),url('../fonts/greycliff/GreycliffCF-Regular.woff2') format('woff2'),url('../fonts/greycliff/GreycliffCF-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Greycliff';
+    font-weight: normal;
+    font-style: italic;
+    src: url('../fonts/greycliff/GreycliffCF-RegularOblique.eot');
+    src: url('../fonts/greycliff/GreycliffCF-RegularOblique.eot?#iefix') format('embedded-opentype'),url('../fonts/greycliff/GreycliffCF-RegularOblique.woff2') format('woff2'),url('../fonts/greycliff/GreycliffCF-RegularOblique.woff') format('woff');
+}
+@font-face {font-family: 'Greycliff';
+    font-weight: bold;
+    font-style: normal;
+    src: url('../fonts/greycliff/GreycliffCF-Bold.eot');
+    src: url('../fonts/greycliff/GreycliffCF-Bold.eot?#iefix') format('embedded-opentype'),url('../fonts/greycliff/GreycliffCF-Bold.woff2') format('woff2'),url('../fonts/greycliff/GreycliffCF-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Greycliff';
+    font-weight: bold;
+    font-style: italic;
+    src: url('../fonts/greycliff/GreycliffCF-BoldOblique.eot');
+    src: url('../fonts/greycliff/GreycliffCF-BoldOblique.eot?#iefix') format('embedded-opentype'),url('../fonts/greycliff/GreycliffCF-BoldOblique.woff2') format('woff2'),url('../fonts/greycliff/GreycliffCF-BoldOblique.woff') format('woff');
+}
