@@ -1,31 +1,33 @@
 {% extends "layouts/home.html" %}
 
     {% set page_title = "Welcome" %}
+    {% set seo_title = "Website design and development in Mississippi | Addison Hall Design" %}
+    {% set seo_description = "Addison Hall Design is a tiny web design studio in Brandon, Mississippi that has been happily creating websites for all sorts of awesome people since 2005." %}
 
     {% block content %}
 
-        <main class="site-main ahd-bg-darker-gray pt2 pb3" role="main">
+        <main class="site-main home-intro-outer ahd-bg-darker-gray" role="main">
 
-            <section class="section-intro px2 md-px4">
+            <section class="section-home-intro px2 md-px4">
                 <div class="md-flex">
                     {# <div class="md-col-3 lg-col-3"></div> #}
-                    <div class="md-col-12 lg-col-10 pt3 pb3">
+                    <div class="md-col-12 lg-col-9 pt3 pb3">
                         {# <h1 class="my0 mb4">{{ page_title }}</h1> #}
                         <p class="big-type bold mb0 ahd-white">Hello!</p>
-                        <h1 class="ahd-white regular">Addison Hall Design is a tiny Mississippi design shop that creates web stuff for all sorts of awesome people.</h1>
+                        <h1 class="ahd-white regular">Addison Hall Design is a tiny Mississippi web design shop that creates cool stuff for all sorts of awesome people.</h1>
                     </div>
                 </div>
                 <div class="overflow-hidden">
                     <div class="md-flex md-mxn3 ahd-white">
                         <div class="md-col-4 md-px3 mb3 md-mb0">
-                            <p>Take a look at a few of my clients and the website work we completed together.</p>
+                            <p><a href="/work">Take a peek at a few of my clients and the websites we&rsquo;ve created together.</a></p>
                         </div>
-                        <div class="md-col-4 md-px3">
+                        {# <div class="md-col-4 md-px3">
                             <p>Find out more about what services I offer, from website design to WordPress maintenance.</p>
                         </div>
                         <div class="md-col-4 md-px3">
                             <p>Who is Addison Hall Design? There&rsquo;s not much to tell, but you can read more.</p>
-                        </div>
+                        </div> #}
                     </div>
                 </div>
             </section>

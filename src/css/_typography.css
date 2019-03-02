@@ -83,9 +83,6 @@ h6 { font-size: 0.9em; font-style: italic; }
     }
 }
 
-/* Font-weight */
-.font-weight-300 { font-weight: 300; }
-
 /* Letter-spacing */
 .ls-0 { letter-spacing: 0; }
 .ls-1 { letter-spacing: 0.025em; }
