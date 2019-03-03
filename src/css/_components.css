@@ -5,36 +5,32 @@
 }
 
 .site-nav {
-    /* font-family: 'SamoSans', sans-serif; */
     font-size: 0.9em;
 }
 
 .home-intro-outer {
     background-image: url('../img/bg-home-hero.jpg');
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: center center;
     background-size: cover;
     padding-top: 1em;
     padding-bottom: 4em;
 }
-
-.home-intro-wrapper {
-    /* background: #fff url('../img/heroes-on-a-shelf-lite-gray.jpg') no-repeat center top; */
-    background-size: cover;
-    /* border-top: 9px solid var(--color-primary); */
+@media (--breakpoint-sm) {
+    .home-intro-outer {
+        background-position: center right;
+    }
 }
 
-/* @media (--breakpoint-md) and (min-height: 596px) {
-    .home-intro-wrapper {
-        height: calc(100vh - 52px);
-    }
-} */
+.home-intro-wrapper {
+    background-size: cover;
+}
+
 
 /* Intro text */
 .intro-hdr {
     font-size: 2rem;
     letter-spacing: -0.015em;
-    /* text-transform: uppercase; */
 }
 @media (--breakpoint-sm) {
     .intro-hdr {
@@ -72,12 +68,6 @@
     position: relative;
     top: 0.75em;
 }
-
-/* .work-list li:nth-child(2) a,
-.work-list li:nth-child(3) a,
-.work-list li:nth-child(6) a {
-    background-color: rgba(255, 76, 0, 0.9);
-} */
 
 .work-list a:focus, .work-list a:hover {
     background-color: rgba(0, 0, 0, 0.5);

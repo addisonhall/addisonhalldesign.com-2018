@@ -27,7 +27,8 @@ function nunjucks() {
         .pipe(nunjucksRender({
             path: ['./src/nunjucks/templates/'],
             data: {
-                urlPath: 'http://localhost:8080'
+                siteUrl: 'https://addisonhalldesign.com',
+                devSiteUrl: 'http://localhost:8080'
             }
         }))
 		.on('error', gutil.log)
@@ -46,11 +47,11 @@ function css() {
     ]
     return src('./src/css/site.css')
         .pipe(postcss(plugins))
-        // .pipe(
-        //     purgecss({
-        //         content: ['./src/nunjucks/**/*.html']
-        //     })
-        // )
+        .pipe(
+            purgecss({
+                content: ['./src/nunjucks/**/*.html']
+            })
+        )
         .pipe(sourcemaps.init())
         .on('error', gutil.log)
         .pipe(sourcemaps.write('.'))

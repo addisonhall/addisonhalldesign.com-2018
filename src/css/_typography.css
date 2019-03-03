@@ -62,6 +62,20 @@ h6 { font-size: 0.9em; font-style: italic; }
     letter-spacing: -0.025em;
 }
 
+.home-intro {
+    font-size: 1.6em;
+}
+@media (--breakpoint-sm) {
+    .home-intro {
+        font-size: 2.1em;
+    }
+}
+@media (--breakpoint-md) {
+    .home-intro {
+        font-size: 2.8em;
+    }
+}
+
 .page-title {
     font-size: var(--body-font-size);
     font-weight: bold;
@@ -74,12 +88,12 @@ h6 { font-size: 0.9em; font-style: italic; }
 
 .big-type {
     font-size: 3.6em;
+    line-height: 1;
+    margin-bottom: -0.375em;
 }
 @media (--breakpoint-lg) {
     .big-type {
         font-size: 7.2em;
-        line-height: 1;
-        margin-bottom: -0.375em;
     }
 }
 

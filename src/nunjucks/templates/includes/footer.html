@@ -8,8 +8,7 @@
     <div class="md-flex py3">
         <div class="md-col-4 md-pr3">
             <p>
-                Addison Hall is a proud type nerd in Brandon, Mississippi.<br>
-                This little site was built using <a href="https://mozilla.github.io/nunjucks/">Nunjucks</a> and <a href="https://postcss.org/">PostCSS</a>.
+                Addison Hall is a proud type nerd who designs and develops in Brandon, Mississippi. This little site was built using <a href="https://mozilla.github.io/nunjucks/">Nunjucks</a> and <a href="https://postcss.org/">PostCSS</a>.
             </p>
         </div>
         <div class="md-col-4 md-pl2">
@@ -17,3 +16,16 @@
         </div>
     </div>
 </footer>
+
+{% if urlPath != "https://addisonhalldesign.com" -%}
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54414713-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+{%- endif %}
