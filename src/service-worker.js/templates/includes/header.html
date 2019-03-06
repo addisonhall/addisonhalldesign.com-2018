@@ -1,0 +1,16 @@
+{% set hdr_border_classes = " border-bottom ahd-border-light-gray" %}
+
+{% if page_title == "Welcome" %}
+    {% set hdr_border_classes = "" %}
+{% endif %}
+
+<header class="site-header px2 md-px4{{ hdr_border_classes }}" role="header">
+    <div class="md-flex pt3 pb2">
+        <div class="md-col-4 md-pr3">
+            <a href="/"><img src="{{ urlPath }}/assets/img/ahd-logo.svg" class="site-logo"></a>
+        </div>
+        <div class="md-col-8 md-pl2">
+            {% include "includes/nav.html" %}
+        </div>
+    </div>
+</header>

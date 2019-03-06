@@ -1,0 +1,44 @@
+{% extends "layouts/default.html" %}
+
+{% set page_title = "Services" %}
+{% set seo_title = "Website Design Services | Addison Hall Design" %}
+{% set seo_description = "I believe good websites are the result of clear organization, appropriate design, necessary technology, and constant focus on the user." %}
+
+{% block content %}
+
+    <section class="section-page section-page-services px2 md-px4 md-mb3">
+        <div class="overflow-hidden">
+            <div class="md-flex md-mxn3">
+                <div class="md-col-8 md-px3 mb3 md-mb0">
+                    <h2 class="ahd-orange">I believe good websites are the result of clear organization, appropriate design, necessary technology, and constant focus on the user.</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {# <img class="mb1" src="{{ urlPath }}/assets/img/img-services-graphic.png" alt="Services"> #}
+
+    <section class="section-page section-page-services px2 md-px4">
+        <div class="overflow-hidden">
+            <div class="clearfix md-mxn3">
+                <div class="md-col md-col-6 lg-col-4 md-px3">
+                    <h3>Website Design &amp; Development</h3>
+                    <p>Working as a partner, I help my clients plan, design, build, and launch websites that are easy to use <em>and</em> easy to maintain. I have particular knack for publishing workflows.</p>
+                    <h3>WordPress Development &amp; Maintenance</h3>
+                    <p>So that clients can focus on their work, I often help troubleshoot and maintain WordPress&mdash;whether it&rsquo;s managing backups, overseeing updates, or recovering from a hack.</p>
+                </div>
+                <div class="md-col md-col-6 lg-col-4 md-px3">
+                    <h3>Ongoing Website Updates</h3>
+                    <p>For clients with websites that require more frequent updates, I can assist in adding and maintaining content.</p>
+                    <h3>Other Digital Branding</h3>
+                    <p>To ensure that your social media and other digital channels are branded as well as your website, I can design and install your brand assets across all your digital media.</p>
+                </div>
+                <div class="md-col md-col-9 lg-col-4 md-px3">
+                    <h3>Anything else?</h3>
+                    <p>The solutions you require don&rsquo;t always fit neatly into a category&mdash;feel free to contact me if something else is on your mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

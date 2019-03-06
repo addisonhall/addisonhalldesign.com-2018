@@ -1,0 +1,93 @@
+{% extends "layouts/default.html" %}
+
+{% set work = [
+    {
+        name: 'Blanchard Group',
+        description: 'Master planning architectural firm',
+        image: '../assets/img/work-blanchard.jpg',
+        link: 'http://blanchardgroup.com'
+    },
+    {
+        name: 'Durfold',
+        description: 'Health care furnishings provider',
+        image: '../assets/img/work-durfold.jpg',
+        link: 'http://durfold.com'
+    },
+    {
+        name: 'Mississippi Folklife',
+        description: 'Mississippi Arts Commission Magazine',
+        image: '../assets/img/work-msfolklife.jpg',
+        link: 'http://mississippifolklife.org'
+    },
+    {
+        name: 'HORNE LLP',
+        description: 'National accounting and advisory firm',
+        image: '../assets/img/work-horne.jpg',
+        link: 'http://hornellp.com'
+    },
+    {
+        name: 'Luckney Animal Hospital',
+        description: 'Local veterinarian',
+        image: '../assets/img/work-luckney.jpg',
+        link: 'http://luckneyanimal.com'
+    },
+    {
+        name: 'Lisa Lightheart',
+        description: 'Illustrator and author',
+        image: '../assets/img/work-lisa-lightheart.jpg',
+        link: 'https://lightheartconnection.com'
+    },
+    {
+        name: 'Cress Group',
+        description: 'Commercial real estate firm',
+        image: '../assets/img/work-cress-group.jpg',
+        link: 'http://cresscre.com'
+    },
+    {
+        name: 'FormsInk',
+        description: 'Municipal printing and supplies',
+        image: '../assets/img/work-formsink.jpg',
+        link: 'http://formsink.com'
+    },
+    {
+        name: 'Mississippi Kidney Foundation',
+        description: 'Nonprofit',
+        image: '../assets/img/work-mskidney.jpg',
+        link: 'https://kidneyms.com'
+    }
+]%}
+
+{% set page_title = "Work" %}
+{% set seo_title = "Client Website Work | Addison Hall Design" %}
+{% set seo_description = "I work with all sorts of great folks to design and build websites of all different shapes and sizes. Here are just a few." %}
+
+{% block content %}
+
+    <section class="section-page section-page-services px2 md-px4">
+        <div class="md-flex">
+            {# <div class="md-col-3"></div> #}
+            <div class="md-col-9 lg-col-6">
+                <h2>Lots of websites for lots of awesome clients.</h2>
+                <p>Here are just a few of the great folks I&rsquo;ve worked with through the years.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-work mt3">
+        <div class="overflow-hidden">
+            <ul class="list-reset work-list mt0 md-flex flex-wrap">
+
+                {% for item in work %}
+                    <li class="col-12 md-col-6 lg-col-4 flex work-list-item" style="background-image:url('{{item.image}}');">
+                        <a class="white text-decoration-none p2 py4 md-p4 flex-auto work-list-name" href="{{item.link}}" target="_blank">
+                            <span class="bold caps ls-3">{{item.name}}</span>
+                            <span class="block work-list-description">{{item.description}}</span>
+                        </a>
+                    </li>
+                {% endfor %}
+                
+            </ul>
+        </div>
+    </section>
+
+{% endblock %}

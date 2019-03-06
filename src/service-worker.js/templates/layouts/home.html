@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include "includes/html_head.html" %}
+    </head>
+    <body class="home">
+
+        {% block header %}
+            {% include "includes/header.html" %}
+        {% endblock %}
+
+        {% block content -%}{%- endblock %}
+
+        {% include "includes/footer.html" %}
+
+        <script src="{{ urlPath }}/assets/js/site.js"></script>
+    </body>
+</html>
