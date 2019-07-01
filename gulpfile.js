@@ -47,11 +47,11 @@ function css() {
     ]
     return src('./src/css/site.css')
         .pipe(postcss(plugins))
-        .pipe(
-            purgecss({
-                content: ['./src/nunjucks/**/*.html']
-            })
-        )
+        // .pipe(
+        //     purgecss({
+        //         content: ['./src/nunjucks/**/*.html']
+        //     })
+        // )
         .pipe(sourcemaps.init())
         .on('error', gutil.log)
         .pipe(sourcemaps.write('.'))
