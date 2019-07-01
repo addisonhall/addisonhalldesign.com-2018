@@ -72,7 +72,7 @@ h6 { font-size: 0.9em; font-style: italic; }
 }
 @media (--breakpoint-md) {
     .home-intro {
-        font-size: 2.8em;
+        font-size: 2.4em;
     }
 }
 
