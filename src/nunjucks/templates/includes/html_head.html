@@ -1,13 +1,10 @@
-{# global vars #}
-{% set urlPath = devSiteUrl %}
-
-<meta charset="utf-8">
+<!-- {{ settings.urlPath }} -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>{{ seo_title }}</title>
 <meta name="description" content="{{ seo_description }}" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="https://use.typekit.net/pst6jmh.css">
-<link href="{{ urlPath }}/assets/css/site.css" rel="stylesheet">
+<link href="{{ urlsettings.urlPathPath }}/assets/css/site.css" rel="stylesheet">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -17,6 +14,6 @@
 <meta name="application-name" content="Addison Hall Design">
 <meta name="msapplication-TileColor" content="#ff4c00">
 <meta name="theme-color" content="#ff4c00">
-{% if urlPath != "https://addisonhalldesign.com" -%}
+{% if settings.urlPath != "https://addisonhalldesign.com" %}
 <meta name="robots" content="noindex, nofollow">
-{%- endif %}
+{% endif %}

@@ -25,11 +25,7 @@ function nunjucks() {
             return JSON.parse(fs.readFileSync('config.json'))
         }))
         .pipe(nunjucksRender({
-            path: ['./src/nunjucks/templates/'],
-            data: {
-                siteUrl: 'https://addisonhalldesign.com',
-                devSiteUrl: 'http://localhost:8080'
-            }
+            path: ['./src/nunjucks/templates/']
         }))
 		.on('error', gutil.log)
         .pipe(dest('./dist/'))
@@ -47,11 +43,11 @@ function css() {
     ]
     return src('./src/css/site.css')
         .pipe(postcss(plugins))
-        // .pipe(
-        //     purgecss({
-        //         content: ['./src/nunjucks/**/*.html']
-        //     })
-        // )
+        .pipe(
+            purgecss({
+                content: ['./src/nunjucks/**/*.html']
+            })
+        )
         .pipe(sourcemaps.init())
         .on('error', gutil.log)
         .pipe(sourcemaps.write('.'))

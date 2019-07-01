@@ -1,10 +1,5 @@
 {
     "settings": {
-        "dev": {
-            "path": "http://localhost:8080"
-        },
-        "live": {
-            "path": "https://addisonhalldesign.com"
-        }
+        "urlPath": "https://addisonhalldesign.com"
     }
 }

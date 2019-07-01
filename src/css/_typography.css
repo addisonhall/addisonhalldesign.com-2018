@@ -1,7 +1,7 @@
 body {
     color: var(--color-darker-secondary);
     font-family: 'jubilat', serif;
-    font-feature-settings: "kern" 1, "liga" 1, "case" 1, "onum" 1;
+    font-feature-settings: "kern" 1, "liga" 1, "case" 1, "onum" 1, "ss02";
     font-kerning: normal;
     font-size: var(--body-font-size);
     text-rendering: auto;
@@ -25,7 +25,6 @@ blockquote, dl, ol, p, pre, ul {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-feature-settings: "liga" 1;
     font-weight: 700;
     line-height: 1.25;
     margin-bottom: 0.25em;
@@ -64,6 +63,7 @@ h6 { font-size: 0.9em; font-style: italic; }
 
 .home-intro {
     font-size: 1.6em;
+    line-height: 1.2;
 }
 @media (--breakpoint-sm) {
     .home-intro {
@@ -72,7 +72,7 @@ h6 { font-size: 0.9em; font-style: italic; }
 }
 @media (--breakpoint-md) {
     .home-intro {
-        font-size: 2.4em;
+        font-size: 3.6em;
     }
 }
 
@@ -112,4 +112,8 @@ h6 { font-size: 0.9em; font-style: italic; }
 
 .lowercase {
     text-transform: none;
+}
+
+em, i {
+    font-feature-settings: "kern" 1, "liga" 1, "case" 1, "onum" 1, "ss01";
 }
