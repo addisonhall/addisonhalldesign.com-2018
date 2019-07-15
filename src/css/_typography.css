@@ -1,6 +1,6 @@
 body {
     color: var(--color-darker-secondary);
-    font-family: 'jubilat', serif;
+    font-family: 'halyard-text', sans-serif;
     font-feature-settings: "kern" 1, "liga" 1, "case" 1, "onum" 1, "ss02";
     font-kerning: normal;
     font-size: var(--body-font-size);
@@ -25,6 +25,8 @@ blockquote, dl, ol, p, pre, ul {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'jubilat', serif;
+    font-feature-settings: "kern" 1, "liga" 1, "case" 1, "onum" 1, "ss02";
     font-weight: 700;
     line-height: 1.25;
     margin-bottom: 0.25em;
