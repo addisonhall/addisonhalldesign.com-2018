@@ -1,0 +1,21 @@
+/* --------------------------------------------
+Style overrides for homepage
+--------------------------------------------*/
+
+body.home {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+body.home .home-intro {
+    color: white;
+}
+
+body.home a {
+    color: #6f2200;
+}
+
+body.home a:focus,
+body.home a:hover {
+    color: black;
+}
