@@ -4,6 +4,10 @@ Style overrides for homepage
 
 body.home {
     background-color: var(--color-primary);
+    background-image: url('../img/AHD-15years-Seal-WhiteFade.png');
+    background-position: bottom -280px right -248px;
+    background-repeat: no-repeat;
+    background-size: 50%;
     color: white;
 }
 
