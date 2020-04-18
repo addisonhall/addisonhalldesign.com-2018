@@ -57,6 +57,7 @@
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     transition: background-color .5s ease;
+    padding-top: 50%;
 }
 
 .work-list-description::after {
