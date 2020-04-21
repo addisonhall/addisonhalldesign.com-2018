@@ -39,6 +39,18 @@
     }
 }
 
+.section-home-intro {
+    background: var(--color-secondary) url(../img/colossus-2000px.jpg) no-repeat center top;
+    background-size: cover;
+    color: white;
+    height: 66.66666vh;
+}
+
+.home-intro-image {
+    max-width: 480px;
+    margin-top: -60px;
+}
+
 /* Work stuff */
 .work-list {
     margin-left: -1px;
@@ -60,7 +72,7 @@
     padding-top: 33.333333%;
 }
 
-.work-list-description::after {
+/* .work-list-description::after {
     content: '';
     display: block;
     width: 2em;
@@ -68,7 +80,7 @@
     background-color: #fff;
     position: relative;
     top: 0.75em;
-}
+} */
 
 .work-list a:focus, .work-list a:hover {
     background-color: rgba(0, 0, 0, 0.5);

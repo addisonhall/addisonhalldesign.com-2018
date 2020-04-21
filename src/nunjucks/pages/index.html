@@ -4,22 +4,116 @@
     {% set seo_title = "Website design and development in Brandon, Mississippi | Addison Hall Design" %}
     {% set seo_description = "Addison Hall Design is a tiny web design studio in Brandon, Mississippi that has been happily creating websites for all sorts of awesome people since 2005." %}
 
+    {% set work = [
+        {
+            name: 'Action Properties',
+            description: 'Retail property developer',
+            image: '../assets/img/work-action-properties.jpg',
+            link: 'http://apusa1.com'
+        },
+        {
+            name: 'R&R Outdoor Survival',
+            description: 'Outdoor and survival online store',
+            image: '../assets/img/work-rnr-outdoor-survival.jpg',
+            link: 'https://rnroutdoorsurvival.com'
+        },
+        {
+            name: 'C-Bus',
+            description: 'Luxury vehicle rental service',
+            image: '../assets/img/work-cbus.jpg',
+            link: 'http://cbusms.com/'
+        },
+        {
+            name: 'Blanchard Group',
+            description: 'Master planning architectural firm',
+            image: '../assets/img/work-blanchard.jpg',
+            link: 'http://blanchardgroup.com'
+        },
+        {
+            name: 'Durfold',
+            description: 'Health care furnishings provider',
+            image: '../assets/img/work-durfold.jpg',
+            link: 'http://durfold.com'
+        },
+        {
+            name: 'Mississippi Folklife',
+            description: 'Mississippi Arts Commission Magazine',
+            image: '../assets/img/work-msfolklife.jpg',
+            link: 'http://mississippifolklife.org'
+        },
+        {
+            name: 'HORNE LLP',
+            description: 'National accounting and advisory firm',
+            image: '../assets/img/work-horne.jpg',
+            link: 'http://hornellp.com'
+        },
+        {
+            name: 'Luckney Animal Hospital',
+            description: 'Local veterinarian',
+            image: '../assets/img/work-luckney.jpg',
+            link: 'http://luckneyanimal.com'
+        },
+        {
+            name: 'Lisa Lightheart',
+            description: 'Illustrator and author',
+            image: '../assets/img/work-lisa-lightheart.jpg',
+            link: 'https://lightheartconnection.com'
+        },
+        {
+            name: 'Cress Group',
+            description: 'Commercial real estate firm',
+            image: '../assets/img/work-cress-group.jpg',
+            link: 'http://cresscre.com'
+        },
+        {
+            name: 'FormsInk',
+            description: 'Municipal printing and supplies',
+            image: '../assets/img/work-formsink.jpg',
+            link: 'http://formsink.com'
+        },
+        {
+            name: 'Mississippi Kidney Foundation',
+            description: 'Nonprofit',
+            image: '../assets/img/work-mskidney.jpg',
+            link: 'https://kidneyms.org'
+        }
+    ]%}
+
     {% block content %}
 
-        <main class="site-main home-intro-outer">
+        <main class="site-main">
 
-            <section class="section-home-intro px2 md-px4">
+            <header class="section-home-headline px2 md-px4 pt1 pb2">
+                <h1 class="home-intro-headline font-headline center m0">Creating a website is really easy.</h1>
+            </header>
+            
+            <section class="section-home-intro px2 md-px4 pt4 mb2"></section>
+
+            <section class="pt2 pb3">
                 <div class="md-flex">
-                    <div class="md-col-12 lg-col-9 pt2 pb3">
-                        <h1 class="home-intro">Addison Hall Design is a tiny Mississippi web design shop that creates cool stuff for all sorts of awesome people.</h1>
+                    <div class="md-col-3"></div>
+                    <div class="md-col-6 reading-copy">
+                        <h2 class="home-intro-subhead font-headline center">It only needs to be beautifully designed, user friendly, well coded, search engine optimized, easy to maintain, and really fast. Oh, and within budget.</h2>
+                        <p>Unless you happen to be a glutton for punishment. But maybe you&rsquo;d like a hand with designing and building your new website. Or perhaps you simply need a little help updating or fixing a few things on your current site. That&rsquo;s really not too much to ask, is it?</p>
+                        <p>Of course not. Since 2005 I&rsquo;ve fostered relationships with good people just like yourself and helped them get their businesses, stores, and ideas online.</p>
                     </div>
                 </div>
+            </section>
+
+            <section class="section-work mt3">
                 <div class="overflow-hidden">
-                    <div class="clearfix md-mxn3">
-                        <div class="col sm-col-8 md-col-6 lg-col-4 md-px3 mb3 md-mb0">
-                            <p><a href="/work">Take a peek at a few of my clients and the websites we&rsquo;ve created together.</a></p>
-                        </div>
-                    </div>
+                    <ul class="list-reset work-list mt0 md-flex flex-wrap">
+
+                        {% for item in work %}
+                            <li class="col-12 md-col-6 lg-col-4 flex work-list-item" style="background-image:url('{{item.image}}');">
+                                <a class="white text-decoration-none p2 py4 md-p4 flex-auto work-list-name" href="{{item.link}}" target="_blank">
+                                    <span class="bold caps ls-3">{{item.name}}</span>
+                                    <span class="block work-list-description">{{item.description}}</span>
+                                </a>
+                            </li>
+                        {% endfor %}
+                        
+                    </ul>
                 </div>
             </section>
 

@@ -2,7 +2,7 @@
 Style overrides for homepage
 --------------------------------------------*/
 
-body.home {
+/* body.home {
     background-color: var(--color-primary);
     background-image: url('../img/AHD-15years-Seal-WhiteFade.png');
     background-position: bottom -280px right -248px;
@@ -22,4 +22,4 @@ body.home a {
 body.home a:focus,
 body.home a:hover {
     color: black;
-}
+} */

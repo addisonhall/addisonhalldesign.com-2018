@@ -1,14 +1,26 @@
 body {
-    color: var(--color-darker-secondary);
-    font-family: 'jubilat', serif;
+    color: var(--color-secondary);
+    font-family: jubilat, serif;
     font-feature-settings: "kern" 1, "liga" 1, "case" 1, "onum" 1, "ss02";
     font-kerning: normal;
     font-size: var(--body-font-size);
     text-rendering: auto;
 }
 
+.reading-copy p {
+    margin-bottom: 0;
+}
+.reading-copy p+p {
+    text-indent: 1em;
+}
+
 .font-body {
     font-size: var(--body-font-size);
+}
+
+.font-headline {
+    font-family: freight-sans-compressed-pro, sans-serif;
+    text-transform: uppercase;
 }
 
 @media (--breakpoint-lg) {
@@ -25,7 +37,7 @@ blockquote, dl, ol, p, pre, ul {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-weight: 700;
+    /* font-weight: 700; */
     line-height: 1.25;
     margin-bottom: 0.25em;
 }
@@ -61,18 +73,30 @@ h6 { font-size: 0.9em; font-style: italic; }
     letter-spacing: -0.025em;
 }
 
-.home-intro {
-    font-size: 1.6em;
-    line-height: 1.1;
+.home-intro-headline {
+    font-size: 2.4em;
+    /* font-weight: 900; */
+    line-height: 0.9;
+}
+.home-intro-subhead {
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: -0.025em;
 }
 @media (--breakpoint-sm) {
-    .home-intro {
-        font-size: 2.1em;
+    .home-intro-headline {
+        font-size: 4.8em;
+        letter-spacing: -0.025em;
     }
 }
 @media (--breakpoint-md) {
-    .home-intro {
-        font-size: 3.6em;
+    .home-intro-headline {
+        font-size: 5.2em;
+        letter-spacing: -0.015em;
+    }
+    .home-intro-subhead {
+        font-size: 2.4em;
     }
 }
 
