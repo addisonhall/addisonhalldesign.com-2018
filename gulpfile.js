@@ -85,6 +85,7 @@ function copyFonts() {
 // live reload
 function runServer() {
 	connect.server({
+        port: 8888,
         root: 'dist',
         livereload: true
 	})
