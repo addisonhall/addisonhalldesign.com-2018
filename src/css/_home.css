@@ -8,18 +8,18 @@ body.home {
     background-position: bottom -280px right -248px;
     background-repeat: no-repeat;
     background-size: 50%;
-    color: white;
+    /* color: white; */
 }
 
-body.home .home-intro {
+/* body.home .home-intro {
     color: white;
-}
+} */
 
-body.home a {
+/* body.home a {
     color: #6f2200;
 }
 
 body.home a:focus,
 body.home a:hover {
     color: black;
-}
+} */
