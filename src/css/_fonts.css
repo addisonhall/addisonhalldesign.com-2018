@@ -1,162 +1,20 @@
-/**
- * @license
- * MyFonts Webfont Build ID 3610133, 2018-07-15T14:46:02-0400
- * 
- * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
- * explicitly restricted from using the Licensed ../fonts/samo-sans(s).
- * 
- * You may obtain a valid license at the URLs below.
- * 
- * Webfont: SamoSans-Italic by CarnokyType
- * URL: https://www.myfonts.com/fonts/carnoky/samo-sans/italic/
- * Licensed pageviews: 10,000
- * 
- * Webfont: SamoSans-BoldItalic by CarnokyType
- * URL: https://www.myfonts.com/fonts/carnoky/samo-sans/bold-italic/
- * Licensed pageviews: 10,000
- * 
- * Webfont: SamoSans-Bold by CarnokyType
- * URL: https://www.myfonts.com/fonts/carnoky/samo-sans/bold/
- * Licensed pageviews: 10,000
- * 
- * Webfont: SamoSans-Regular by CarnokyType
- * URL: https://www.myfonts.com/fonts/carnoky/samo-sans/regular/
- * Licensed pageviews: 100,010,000
- * 
- * 
- * License: https://www.myfonts.com/viewlicense?type=web&buildid=3610133
- * ../fonts/samo-sans copyright: Copyright (c) 2012 by Samuel Carnoky / CarnokyType. All rights reserved.
- * 
- * © 2018 MyFonts Inc
-*/
 
-@font-face {font-family: 'SamoSans';font-weight: normal;font-style: italic;src: url('../fonts/samo-sans/371615_0_0.eot');src: url('../fonts/samo-sans/371615_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/samo-sans/371615_0_0.woff2') format('woff2'),url('../fonts/samo-sans/371615_0_0.woff') format('woff'),url('../fonts/samo-sans/371615_0_0.ttf') format('truetype');}
-@font-face {font-family: 'SamoSans';font-weight: bold;font-style: italic;src: url('../fonts/samo-sans/371615_1_0.eot');src: url('../fonts/samo-sans/371615_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/samo-sans/371615_1_0.woff2') format('woff2'),url('../fonts/samo-sans/371615_1_0.woff') format('woff'),url('../fonts/samo-sans/371615_1_0.ttf') format('truetype');}
-@font-face {font-family: 'SamoSans';font-weight: bold;font-style: normal;src: url('../fonts/samo-sans/371615_2_0.eot');src: url('../fonts/samo-sans/371615_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/samo-sans/371615_2_0.woff2') format('woff2'),url('../fonts/samo-sans/371615_2_0.woff') format('woff'),url('../fonts/samo-sans/371615_2_0.ttf') format('truetype');}
-@font-face {font-family: 'SamoSans';font-weight: normal;font-style: normal;src: url('../fonts/samo-sans/371615_3_0.eot');src: url('../fonts/samo-sans/3716mo-sans15_3_0.eot?#iefix') format('embedded-opentype'),url('../fonts/samo-sans/371615_3_0.woff2') format('woff2'),url('../fonts/samo-sans/371615_3_0.woff') format('woff'),url('../fonts/samo-sans/371615_3_0.ttf') format('truetype');}
-
-/**
- * Klinik Slab
- */
-@font-face {
-    font-family: 'KlinikSlab';
-    src: url('../fonts/klinic-slab/klinicslabbook-webfont.woff2') format('woff2'),
-         url('../fonts/klinic-slab/klinicslabbook-webfont.woff') format('woff');
-    font-weight: 400;
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=7a9eaa82-2100-4988-991a-8fde331d2922");
+@font-face{
+    font-family:"Clarendon";
+    src:url("../fonts/addison_hall_design-05082020/78aa70a4-baf4-48f7-bbb8-fdf405c049b1.woff2") format("woff2"),url("../fonts/addison_hall_design-05082020/572540d0-3091-4b7f-a89e-28fea942a7ba.woff") format("woff");
     font-style: normal;
-}
-@font-face {
-    font-family: 'KlinikSlab';
-    src: url('../fonts/klinic-slab/klinicslabbookit-webfont.woff2') format('woff2'),
-         url('../fonts/klinic-slab/klinicslabbookit-webfont.woff') format('woff');
-    font-weight: 400;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'KlinikSlab';
-    src: url('../fonts/klinic-slab/klinicslabmedium-webfont.woff2') format('woff2'),
-         url('../fonts/klinic-slab/klinicslabmedium-webfont.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'KlinikSlab';
-    src: url('../fonts/klinic-slab/klinicslabmediumit-webfont.woff2') format('woff2'),
-         url('../fonts/klinic-slab/klinicslabmediumit-webfont.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'KlinikSlab';
-    src: url('../fonts/klinic-slab/klinicslabbold-webfont.woff2') format('woff2'),
-         url('../fonts/klinic-slab/klinicslabbold-webfont.woff') format('woff');
     font-weight: 700;
-    font-style: normal;
 }
-@font-face {
-    font-family: 'KlinikSlab';
-    src: url('../fonts/klinic-slab/klinicslabboldit-webfont.woff2') format('woff2'),
-         url('../fonts/klinic-slab/klinicslabboldit-webfont.woff') format('woff');
-    font-weight: 700;
-    font-style: italic;
-}
-
-/**
- * @license
- * MyFonts Webfont Build ID 3691499, 2018-12-27T20:29:09-0500
- * 
- * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
- * explicitly restricted from using the Licensed Webfonts(s).
- * 
- * You may obtain a valid license at the URLs below.
- * 
- * Webfont: ConfigRounded-Bold by Adam Ladd
- * URL: https://www.myfonts.com/fonts/adam-ladd/config-rounded/bold/
- * 
- * Webfont: ConfigRounded-BoldItalic by Adam Ladd
- * URL: https://www.myfonts.com/fonts/adam-ladd/config-rounded/bold-italic/
- * 
- * Webfont: ConfigRounded-Italic by Adam Ladd
- * URL: https://www.myfonts.com/fonts/adam-ladd/config-rounded/italic/
- * 
- * Webfont: ConfigRounded-Regular by Adam Ladd
- * URL: https://www.myfonts.com/fonts/adam-ladd/config-rounded/regular/
- * 
- * 
- * License: https://www.myfonts.com/viewlicense?type=web&buildid=3691499
- * Licensed pageviews: 10,000
- * Webfonts copyright: Copyright &#x00A9; 2018 by Adam Ladd. All rights reserved.
- * 
- * © 2018 MyFonts Inc
-*/
-
-/* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/3853eb");
-@font-face {font-family: 'ConfigRounded';font-weight: bold;font-style: normal;src: url('../fonts/config-rounded/3853EB_0_0.eot');src: url('../fonts/config-rounded/3853EB_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/config-rounded/3853EB_0_0.woff2') format('woff2'),url('../fonts/config-rounded/3853EB_0_0.woff') format('woff'),url('../fonts/config-rounded/3853EB_0_0.ttf') format('truetype');}
-@font-face {font-family: 'ConfigRounded';font-weight: bold;font-style: italic;src: url('../fonts/config-rounded/3853EB_1_0.eot');src: url('../fonts/config-rounded/3853EB_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/config-rounded/3853EB_1_0.woff2') format('woff2'),url('../fonts/config-rounded/3853EB_1_0.woff') format('woff'),url('../fonts/config-rounded/3853EB_1_0.ttf') format('truetype');}
-@font-face {font-family: 'ConfigRounded';font-weight: normal;font-style: italic;src: url('../fonts/config-rounded/3853EB_2_0.eot');src: url('../fonts/config-rounded/3853EB_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/config-rounded/3853EB_2_0.woff2') format('woff2'),url('../fonts/config-rounded/3853EB_2_0.woff') format('woff'),url('../fonts/config-rounded/3853EB_2_0.ttf') format('truetype');}
-@font-face {font-family: 'ConfigRounded';font-weight: normal;font-style: normal;src: url('../fonts/config-rounded/3853EB_3_0.eot');src: url('../fonts/config-rounded/3853EB_3_0.eot?#iefix') format('embedded-opentype'),url('../fonts/config-rounded/3853EB_3_0.woff2') format('woff2'),url('../fonts/config-rounded/3853EB_3_0.woff') format('woff'),url('../fonts/config-rounded/3853EB_3_0.ttf') format('truetype');}
-
-/* Webfont: SSNicksonNo.6 */
-/* @font-face {
-    font-family: 'NicksonNo6';
-    src: url('../fonts/nickson-no6/SSNicksonNo.eot');
-    src: url('../fonts/nickson-no6/SSNicksonNo.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/nickson-no6/SSNicksonNo.woff') format('woff'),
-         url('../fonts/nickson-no6/SSNicksonNo.ttf') format('truetype'),
-         url('../fonts/nickson-no6/SSNicksonNo.svg#SSNicksonNo.6') format('svg');
+@font-face{
+    font-family:"Ionic";
+    src:url("../fonts/addison_hall_design-05082020/2997dba2-296f-4489-9d74-406177d57e59.woff2") format("woff2"),url("../fonts/addison_hall_design-05082020/3d4a72b0-6b85-4ce1-8c2b-1c2155755c7b.woff") format("woff");
     font-style: normal;
     font-weight: normal;
-    text-rendering: optimizeLegibility;
-} */
-
-/* --- Greycliff --- */
-@font-face {
-    font-family: 'Greycliff';
-    font-weight: normal;
-    font-style: normal;
-    src: url('../fonts/greycliff/GreycliffCF-Regular.eot');
-    src: url('../fonts/greycliff/GreycliffCF-Regular.eot?#iefix') format('embedded-opentype'),url('../fonts/greycliff/GreycliffCF-Regular.woff2') format('woff2'),url('../fonts/greycliff/GreycliffCF-Regular.woff') format('woff');
 }
-@font-face {
-    font-family: 'Greycliff';
-    font-weight: normal;
+@font-face{
+    font-family:"Ionic";
+    src:url("../fonts/addison_hall_design-05082020/f371783a-470a-4b26-ad20-af5cf050468e.woff2") format("woff2"),url("../fonts/addison_hall_design-05082020/c290543a-df93-45e4-9d3b-62bf232419e0.woff") format("woff");
     font-style: italic;
-    src: url('../fonts/greycliff/GreycliffCF-RegularOblique.eot');
-    src: url('../fonts/greycliff/GreycliffCF-RegularOblique.eot?#iefix') format('embedded-opentype'),url('../fonts/greycliff/GreycliffCF-RegularOblique.woff2') format('woff2'),url('../fonts/greycliff/GreycliffCF-RegularOblique.woff') format('woff');
-}
-@font-face {font-family: 'Greycliff';
-    font-weight: bold;
-    font-style: normal;
-    src: url('../fonts/greycliff/GreycliffCF-Bold.eot');
-    src: url('../fonts/greycliff/GreycliffCF-Bold.eot?#iefix') format('embedded-opentype'),url('../fonts/greycliff/GreycliffCF-Bold.woff2') format('woff2'),url('../fonts/greycliff/GreycliffCF-Bold.woff') format('woff');
-}
-@font-face {
-    font-family: 'Greycliff';
-    font-weight: bold;
-    font-style: italic;
-    src: url('../fonts/greycliff/GreycliffCF-BoldOblique.eot');
-    src: url('../fonts/greycliff/GreycliffCF-BoldOblique.eot?#iefix') format('embedded-opentype'),url('../fonts/greycliff/GreycliffCF-BoldOblique.woff2') format('woff2'),url('../fonts/greycliff/GreycliffCF-BoldOblique.woff') format('woff');
+    font-weight: normal;
 }
