@@ -1,6 +1,6 @@
 body {
     color: var(--color-darker-secondary);
-    font-family: 'jubilat', serif;
+    font-family: 'config-rounded', sans-serif;
     font-feature-settings: "kern" 1, "liga" 1, "case" 1, "onum" 1, "ss02";
     font-kerning: normal;
     font-size: var(--body-font-size);
@@ -25,9 +25,12 @@ blockquote, dl, ol, p, pre, ul {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'config-rounded', sans-serif;
     font-weight: 700;
+    letter-spacing: 0;
     line-height: 1.25;
     margin-bottom: 0.25em;
+    text-transform: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,7 +46,10 @@ h1 + h2 {
 }
 
 h1, .h1 {
-    font-size: 2.8em;
+    font-family: 'zuume-soft', sans-serif;
+    font-size: 4em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 h2 {
     font-size: 1.15em;
@@ -72,7 +78,7 @@ h6 { font-size: 0.9em; font-style: italic; }
 }
 @media (--breakpoint-md) {
     .home-intro {
-        font-size: 3.6em;
+        font-size: 6em;
     }
 }
 

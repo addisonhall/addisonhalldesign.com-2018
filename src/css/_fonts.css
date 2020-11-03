@@ -1,20 +1,28 @@
-
-@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=7a9eaa82-2100-4988-991a-8fde331d2922");
 @font-face{
-    font-family:"Clarendon";
-    src:url("../fonts/addison_hall_design-05082020/78aa70a4-baf4-48f7-bbb8-fdf405c049b1.woff2") format("woff2"),url("../fonts/addison_hall_design-05082020/572540d0-3091-4b7f-a89e-28fea942a7ba.woff") format("woff");
+    font-family: "zuume-soft";
+    src: url("../fonts/zuume-soft/zuumesoft-semibold-webfont.woff2") format("woff2"),
+         url("../fonts/zuume-soft/zuumesoft-semibold-webfont.woff") format("woff");
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
 }
 @font-face{
-    font-family:"Ionic";
-    src:url("../fonts/addison_hall_design-05082020/2997dba2-296f-4489-9d74-406177d57e59.woff2") format("woff2"),url("../fonts/addison_hall_design-05082020/3d4a72b0-6b85-4ce1-8c2b-1c2155755c7b.woff") format("woff");
+    font-family: "config-rounded";
+    src: url("../fonts/config-rounded-web/ConfigRounded-Regular/font.woff2") format("woff2"),
+         url("../fonts/config-rounded-web/ConfigRounded-Regular/font.woff") format("woff");
     font-style: normal;
     font-weight: normal;
 }
 @font-face{
-    font-family:"Ionic";
-    src:url("../fonts/addison_hall_design-05082020/f371783a-470a-4b26-ad20-af5cf050468e.woff2") format("woff2"),url("../fonts/addison_hall_design-05082020/c290543a-df93-45e4-9d3b-62bf232419e0.woff") format("woff");
+    font-family: "config-rounded";
+    src: url("../fonts/config-rounded-web/ConfigRounded-Italic/font.woff2") format("woff2"),
+         url("../fonts/config-rounded-web/ConfigRounded-Italic/font.woff") format("woff");
     font-style: italic;
     font-weight: normal;
+}
+@font-face{
+    font-family: "config-rounded";
+    src: url("../fonts/config-rounded-web/ConfigRounded-Bold/font.woff2") format("woff2"),
+         url("../fonts/config-rounded-web/ConfigRounded-Bold/font.woff") format("woff");
+    font-style: normal;
+    font-weight: bold;
 }

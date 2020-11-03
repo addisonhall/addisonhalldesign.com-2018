@@ -6,43 +6,47 @@
 
     <body class="page" style="{{ body_style }}">
 
-        {% block header %}
-            {% include "includes/header.html" %}
-        {% endblock %}
+        <div class="page-container">
 
-        <main class="site-main pt2 pb3" role="main">
+            {% block header %}
+                {% include "includes/header.html" %}
+            {% endblock %}
 
-            <article>
+            <main class="site-main pt2 pb3" role="main">
 
-                <header class="content-header px2 md-px4">
-                    <div class="md-flex">
-                        {# <div class="md-col-3 lg-col-3"></div> #}
-                        <div class="md-col-9 lg-col-6">
-                            <h1 class="my0 mb4">{{ page_title }}</h1>
+                <article>
+
+                    <header class="content-header px2 md-px4">
+                        <div class="md-flex">
+                            {# <div class="md-col-3 lg-col-3"></div> #}
+                            <div class="md-col-9 lg-col-6">
+                                <h1 class="my0 mb4">{{ page_title }}</h1>
+                            </div>
                         </div>
-                    </div>
-                </header>
+                    </header>
 
-                {% block content -%}{%- endblock %}
+                    {% block content -%}{%- endblock %}
 
-            </article>
+                </article>
 
-        </main>
+            </main>
 
-        {% include "includes/footer.html" %}
+            {% include "includes/footer.html" %}
 
-        {# <script>
-            if('serviceWorker' in navigator) {
-                window.addEventListener('load', () => {
-                    navigator.serviceWorker.register('service-worker.js')
-                    .then((registration) => {
-                        console.log("Service Worker registration successful")
-                    }, (err) => {
-                        console.log("Registration failed")
+            {# <script>
+                if('serviceWorker' in navigator) {
+                    window.addEventListener('load', () => {
+                        navigator.serviceWorker.register('service-worker.js')
+                        .then((registration) => {
+                            console.log("Service Worker registration successful")
+                        }, (err) => {
+                            console.log("Registration failed")
+                        })
                     })
-                })
-            }
-        </script> #}
+                }
+            </script> #}
+
+        </div>
 
     </body>
 </html>
