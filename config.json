@@ -1,7 +1,7 @@
 {
     "settings": {
-        "urlPath": "http://localhost:8080",
-        "_urlPath": "https://addisonhalldesign.com",
+        "_urlPath": "http://localhost:8080",
+        "urlPath": "https://addisonhalldesign.com",
         "typekitID": "pst6jmh"
     }
 }
