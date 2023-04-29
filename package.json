@@ -20,7 +20,7 @@
     "gulp-postcss": "^8.0.0",
     "gulp-purgecss": "^1.2.0",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify-es": "^1.0.4",
+    "gulp-uglify-es": "^3.0.0",
     "gulp-util": "^3.0.8",
     "postcss-calc": "^6.0.2",
     "postcss-custom-media": "^8.0.0",
